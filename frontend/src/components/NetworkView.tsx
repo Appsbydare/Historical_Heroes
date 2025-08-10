@@ -201,13 +201,18 @@ const NetworkView = () => {
         
         // Add new links
         expandedData.links.forEach((newLink: any) => {
-          if (!newLinks.find(l => l.source === newLink.source && l.target === newLink.target)) {
+          const linkExists = newLinks.find(l => 
+            (l.source === newLink.source && l.target === newLink.target) ||
+            (l.source === newLink.target && l.target === newLink.source)
+          );
+          if (!linkExists) {
             newLinks.push(newLink);
           }
         });
         
         console.log('Updated network data - Nodes:', newNodes.length, 'Links:', newLinks.length); // Debug log
         
+        // Update the network data to trigger re-render
         setNetworkData({
           nodes: newNodes,
           links: newLinks
@@ -215,6 +220,11 @@ const NetworkView = () => {
         
         // Mark node as expanded
         setExpandedNodes(new Set([...expandedNodes, node.id]));
+        
+        // Force a small delay to ensure state updates
+        setTimeout(() => {
+          console.log('Network updated with new links!');
+        }, 100);
         
       } catch (error) {
         console.error('Failed to expand node:', error);

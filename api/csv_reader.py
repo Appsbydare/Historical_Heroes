@@ -168,7 +168,7 @@ def get_session_nodes(session_id):
 
 @app.route('/api/sessions/<int:session_id>/nodes/<node_id>/expand', methods=['POST'])
 def expand_node(session_id, node_id):
-    """Expand a node (for prototype, return the same network data)"""
+    """Expand a node (for prototype, return related nodes based on Korean War data)"""
     try:
         if session_id != 1:
             return jsonify({'error': 'Session not found'}), 404
@@ -188,9 +188,11 @@ def expand_node(session_id, node_id):
         if not target_node:
             return jsonify({'error': 'Node not found'}), 404
         
-        # For prototype, return the same network data
-        # In a real implementation, this would fetch related nodes
-        network_nodes = []
+        # For Korean War data, create some logical connections
+        # This is a prototype - in real implementation, you'd have actual relationship data
+        
+        # Get all nodes
+        all_nodes = []
         for node in csv_data:
             network_node = {
                 'id': node.get('node_id', ''),
@@ -202,13 +204,52 @@ def expand_node(session_id, node_id):
                 'end_date': node.get('end_date', ''),
                 'metadata': node.get('metadata', {})
             }
-            network_nodes.append(network_node)
+            all_nodes.append(network_node)
         
-        # Create simple links (placeholder - could be enhanced later)
+        # Create links based on Korean War relationships
         links = []
         
+        # If expanding Korean War (e1), connect to key people
+        if node_id == 'e1':  # Korean War
+            key_people = ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'p10']  # Key Korean War figures
+            for person_id in key_people:
+                links.append({
+                    'source': 'e1',
+                    'target': person_id,
+                    'type': 'involvement'
+                })
+        
+        # If expanding a person, connect to Korean War and other related events
+        elif target_node.get('node_type') == 'Person':
+            # Connect person to Korean War
+            links.append({
+                'source': node_id,
+                'target': 'e1',  # Korean War
+                'type': 'involvement'
+            })
+            
+            # Connect to related events based on person's role
+            if node_id in ['p3', 'p4', 'p5']:  # Truman, Eisenhower, MacArthur
+                links.append({
+                    'source': node_id,
+                    'target': 'e4',  # World War II
+                    'type': 'involvement'
+                })
+        
+        # If expanding an event, connect to related people
+        elif target_node.get('node_type') == 'Event':
+            # Connect event to some key people
+            if node_id in ['e4', 'e5']:  # World War II events
+                key_people = ['p3', 'p4', 'p5', 'p6', 'p7', 'p8']  # WWII figures
+                for person_id in key_people:
+                    links.append({
+                        'source': node_id,
+                        'target': person_id,
+                        'type': 'involvement'
+                    })
+        
         return jsonify({
-            'nodes': network_nodes,
+            'nodes': all_nodes,
             'links': links,
             'expanded_node': {
                 'id': target_node.get('node_id', ''),
