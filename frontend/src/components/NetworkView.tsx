@@ -86,9 +86,9 @@ const NetworkView = () => {
       .enter()
       .append('line')
       .attr('class', 'link')
-      .attr('stroke', '#666')
-      .attr('stroke-width', 2)
-      .attr('stroke-opacity', 0.6);
+      .attr('stroke', '#999') // Lighter color for normal state
+      .attr('stroke-width', 1.5) // Slightly thinner for normal state
+      .attr('stroke-opacity', 0.7); // Slightly more visible
 
     // Create nodes with proper colors
     const nodes = g.append('g')
@@ -115,6 +115,23 @@ const NetworkView = () => {
         // Increase size on hover
         d3.select(this).attr('r', (d: any) => d.node_type === 'Event' ? 40 : 15);
         
+        // Highlight connections for Event nodes
+        if (d.node_type === 'Event') {
+          links
+            .attr('stroke', (link: any) => {
+              // Highlight links connected to this Event node
+              return (link.source.id === d.id || link.target.id === d.id) ? '#333' : '#ccc';
+            })
+            .attr('stroke-width', (link: any) => {
+              // Increase thickness for connected links
+              return (link.source.id === d.id || link.target.id === d.id) ? 3 : 1;
+            })
+            .attr('stroke-opacity', (link: any) => {
+              // Increase opacity for connected links
+              return (link.source.id === d.id || link.target.id === d.id) ? 1 : 0.3;
+            });
+        }
+        
         // Create tooltip with light background and dark text
         const tooltip = d3.select('body').append('div')
           .attr('class', 'absolute bg-white border border-gray-200 shadow-lg rounded-lg px-3 py-2 text-sm z-50')
@@ -136,6 +153,15 @@ const NetworkView = () => {
       .on('mouseout', function(event, d: any) {
         // Reset size
         d3.select(this).attr('r', (d: any) => d.node_type === 'Event' ? 35 : 12);
+        
+        // Reset link styling to normal state
+        if (d.node_type === 'Event') {
+          links
+            .attr('stroke', '#999') // Reset to normal color
+            .attr('stroke-width', 1.5) // Reset to normal thickness
+            .attr('stroke-opacity', 0.7); // Reset to normal opacity
+        }
+        
         d3.selectAll('div').filter(function() {
           return d3.select(this).classed('absolute') && d3.select(this).style('background-color') === 'rgb(255, 255, 255)';
         }).remove();
