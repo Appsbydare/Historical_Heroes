@@ -150,10 +150,11 @@ const NetworkView = () => {
       .attr('x', 0)
       .attr('y', 0)
       .attr('text-anchor', 'middle')
-      .style('font-size', (d) => d.node_type === 'Event' ? '10px' : '10px') // Bigger font for Events
+      .style('font-size', (d) => d.node_type === 'Event' ? '12px' : '10px') // Bigger font for Events
       .style('fill', (d) => d.node_type === 'Event' ? '#ffffff' : '#000000') // White text for black nodes, black text for green nodes
       .style('pointer-events', 'none')
-              .each(function(d: any) {
+      .style('font-weight', (d) => d.node_type === 'Event' ? 'bold' : 'normal') // Bold for Events
+      .each(function(d: any) {
         const text = d3.select(this);
         const words: string[] = d.title.split(' ');
         const maxWidth = d.node_type === 'Event' ? 60 : 60; // Bigger width for Events
@@ -179,6 +180,7 @@ const NetworkView = () => {
           text.style('font-weight', 'bold'); // Bold for Events
           text.attr('dy', '0.35em'); // Center vertically in circle
           text.style('text-anchor', 'middle'); // Ensure horizontal centering
+          text.style('fill', '#ffffff'); // Ensure white color for the main text element
           lines.forEach((line: string, i: number) => {
             text.append('tspan')
               .attr('x', 0)
@@ -186,7 +188,8 @@ const NetworkView = () => {
               .style('fill', '#ffffff') // Ensure white color
               .style('font-weight', 'bold')
               .style('text-anchor', 'middle') // Ensure each line is centered
-              .style('font-size', '10px') // Ensure consistent font size
+              .style('font-size', '12px') // Larger font size for better visibility
+              .style('text-shadow', '1px 1px 2px rgba(0,0,0,0.8)') // Add text shadow for better contrast
               .text(line.trim());
           });
         } else {
@@ -197,6 +200,7 @@ const NetworkView = () => {
           text.style('text-anchor', 'middle'); // Ensure horizontal centering
           text.style('font-size', '10px'); // Ensure consistent font size
           text.style('fill', '#000000'); // Ensure black color for visibility
+          text.style('text-shadow', '1px 1px 2px rgba(255,255,255,0.8)'); // Add white shadow for better contrast
         }
       });
 
