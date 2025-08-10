@@ -1,11 +1,21 @@
 import csv
 import json
 import os
-from flask import Flask, jsonify
+from flask import Flask, jsonify, make_response
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app)
+
+# Add proper headers to all responses
+@app.after_request
+def add_headers(response):
+    response.headers['X-Content-Type-Options'] = 'nosniff'
+    response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '0'
+    response.headers['Content-Type'] = 'application/json; charset=utf-8'
+    return response
 
 # Cache the CSV data to avoid reading it multiple times
 _csv_data = None

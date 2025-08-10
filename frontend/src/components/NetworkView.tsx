@@ -74,10 +74,10 @@ const NetworkView = () => {
 
     // Create force simulation with better positioning
     const simulation = d3.forceSimulation(networkData.nodes)
-      .force('link', d3.forceLink(networkData.links).id((d: any) => d.id).distance(80))
-      .force('charge', d3.forceManyBody().strength(-200))
+      .force('link', d3.forceLink(networkData.links).id((d: any) => d.id).distance(100)) // Increased distance
+      .force('charge', d3.forceManyBody().strength(-300)) // Stronger repulsion
       .force('center', d3.forceCenter(width / 2, height / 2))
-      .force('collision', d3.forceCollide().radius(25));
+      .force('collision', d3.forceCollide().radius((d: any) => d.node_type === 'Event' ? 35 : 20)); // Bigger collision radius for Events
 
     // Create links with better styling
     const links = g.append('g')
@@ -96,7 +96,7 @@ const NetworkView = () => {
       .data(networkData.nodes)
       .enter()
       .append('circle')
-      .attr('r', (d) => d.node_type === 'Event' ? 15 : 12)
+      .attr('r', (d) => d.node_type === 'Event' ? 25 : 12) // Bigger for Events
       .attr('fill', (d) => d.node_type === 'Event' ? '#000000' : '#90EE90') // Black for Events, Light Green for People
       .attr('stroke', (d) => d.node_type === 'Event' ? '#333' : '#228B22')
       .attr('stroke-width', 2)
@@ -113,7 +113,7 @@ const NetworkView = () => {
       })
       .on('mouseover', function(event, d: any) {
         // Increase size on hover
-        d3.select(this).attr('r', (d: any) => d.node_type === 'Event' ? 18 : 15);
+        d3.select(this).attr('r', (d: any) => d.node_type === 'Event' ? 30 : 15);
         
         // Create tooltip with light background and dark text
         const tooltip = d3.select('body').append('div')
@@ -135,27 +135,61 @@ const NetworkView = () => {
       })
       .on('mouseout', function(event, d: any) {
         // Reset size
-        d3.select(this).attr('r', (d: any) => d.node_type === 'Event' ? 15 : 12);
+        d3.select(this).attr('r', (d: any) => d.node_type === 'Event' ? 25 : 12);
         d3.selectAll('div').filter(function() {
           return d3.select(this).classed('absolute') && d3.select(this).style('background-color') === 'rgb(255, 255, 255)';
         }).remove();
       });
 
-    // Add labels with better styling
+    // Add labels with wrapped text for Events
     const labels = g.append('g')
       .selectAll('text')
       .data(networkData.nodes)
       .enter()
       .append('text')
-      .text((d) => d.title.length > 12 ? d.title.substring(0, 12) + '...' : d.title)
       .attr('x', 0)
       .attr('y', 0)
       .attr('text-anchor', 'middle')
       .attr('dy', '0.35em')
-      .style('font-size', '10px')
+      .style('font-size', (d) => d.node_type === 'Event' ? '8px' : '10px')
       .style('font-weight', 'bold')
       .style('fill', (d) => d.node_type === 'Event' ? '#ffffff' : '#000000') // White text for black nodes, black text for green nodes
-      .style('pointer-events', 'none');
+      .style('pointer-events', 'none')
+      .each(function(d: any) {
+        const text = d3.select(this);
+        const words = d.title.split(' ');
+        const maxWidth = d.node_type === 'Event' ? 40 : 60; // Smaller width for Events
+        const lineHeight = d.node_type === 'Event' ? 8 : 10;
+        
+        if (d.node_type === 'Event') {
+          // For Events, wrap text inside the circle
+          let line = '';
+          let lines = [];
+          
+          words.forEach(word => {
+            const testLine = line + word + ' ';
+            if (testLine.length * 6 > maxWidth) { // Approximate character width
+              lines.push(line);
+              line = word + ' ';
+            } else {
+              line = testLine;
+            }
+          });
+          lines.push(line);
+          
+          // Clear existing text and add wrapped lines
+          text.text('');
+          lines.forEach((line, i) => {
+            text.append('tspan')
+              .attr('x', 0)
+              .attr('dy', i === 0 ? '-0.5em' : '1em')
+              .text(line.trim());
+          });
+        } else {
+          // For People, truncate if too long
+          text.text(d.title.length > 12 ? d.title.substring(0, 12) + '...' : d.title);
+        }
+      });
 
     // Update positions on simulation tick
     simulation.on('tick', () => {
