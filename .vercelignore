@@ -1,61 +1,58 @@
-# Exclude ALL backend files that aren't needed for the API
-backend/
+# EXCLUDE ALL UNNECESSARY DIRECTORIES
 build_release/
+build/
 ExeFile/
+backend/
 database/
+__pycache__/
+dist/
+
+# EXCLUDE ALL LARGE FILES
 *.exe
+*.zip
+*.rar
+*.tar.gz
+*.pkg
 *.spec
 *.bat
 *.pyc
 *.pyo
 *.pyd
 
-# Exclude specific large files found in the project
-WikipediaExtractor.exe
-esbuild.exe
-Build_release.zip
-base_library.zip
+# EXCLUDE NODE_MODULES (will be installed by Vercel)
+frontend/node_modules/
 
-# Exclude development files
-node_modules/
-__pycache__/
+# EXCLUDE DEVELOPMENT FILES
 .env
 .env.local
 .env.production
-
-# Exclude build artifacts
-dist/
-build/
-*.egg-info/
-
-# Exclude IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Exclude OS files
-.DS_Store
-Thumbs.db
-
-# Exclude logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Exclude large files
-*.zip
-*.tar.gz
-*.rar
+# EXCLUDE IDE FILES
+.vscode/
+.idea/
+*.swp
+*.swo
 
-# Exclude documentation files
+# EXCLUDE OS FILES
+.DS_Store
+Thumbs.db
+
+# EXCLUDE BUILD ARTIFACTS
+*.egg-info/
+*.map
+
+# EXCLUDE DOCUMENTATION (except README)
 *.md
 !README.md
 
-# Keep only essential files for the prototype
-# - frontend/ (React app)
+# KEEP ONLY ESSENTIAL FILES FOR PROTOTYPE:
+# - frontend/ (React app source, not node_modules)
 # - api/csv_reader.py (Python API)
 # - api/requirements.txt (Python dependencies)
 # - Nodes.csv (data)
-# - vercel.json (configuration) 
+# - vercel.json (configuration)
+# - package.json files 

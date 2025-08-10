@@ -12,7 +12,18 @@ venv/
 # Build outputs
 dist/
 build/
+build_release/
+ExeFile/
 *.egg-info/
+
+# Large files
+*.exe
+*.zip
+*.rar
+*.tar.gz
+*.pkg
+*.spec
+*.bat
 
 # Environment variables
 .env
@@ -48,4 +59,7 @@ yarn-error.log*
 .vercel
 
 # Keep Nodes.csv for prototype
-!Nodes.csv 
+!Nodes.csv
+
+# Exclude large build artifacts
+*.map 
