@@ -164,9 +164,9 @@ const NetworkView = () => {
         if (d.node_type === 'Event') {
           // For Events, wrap text inside the circle
           let line = '';
-          let lines = [];
+          let lines: string[] = [];
           
-          words.forEach(word => {
+          words.forEach((word: string) => {
             const testLine = line + word + ' ';
             if (testLine.length * 6 > maxWidth) { // Approximate character width
               lines.push(line);
@@ -179,7 +179,7 @@ const NetworkView = () => {
           
           // Clear existing text and add wrapped lines
           text.text('');
-          lines.forEach((line, i) => {
+          lines.forEach((line: string, i: number) => {
             text.append('tspan')
               .attr('x', 0)
               .attr('dy', i === 0 ? '-0.5em' : '1em')
