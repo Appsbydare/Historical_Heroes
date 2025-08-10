@@ -161,41 +161,14 @@ const NetworkView = () => {
         const maxWidth = d.node_type === 'Event' ? 60 : 60; // Bigger width for Events
         
         if (d.node_type === 'Event') {
-          // For Events, wrap text inside the circle
-          let line = '';
-          let lines: string[] = [];
-          
-          words.forEach((word: string) => {
-            const testLine = line + word + ' ';
-            if (testLine.length * 6 > maxWidth) { // Approximate character width
-              lines.push(line);
-              line = word + ' ';
-            } else {
-              line = testLine;
-            }
-          });
-          lines.push(line);
-          
-          // Clear existing text and add wrapped lines
-          text.text('');
+          // For Events, use simple text like People nodes
+          text.text(d.title.length > 15 ? d.title.substring(0, 15) + '...' : d.title);
           text.style('font-weight', 'bold'); // Bold for Events
           text.attr('dy', '0.35em'); // Center vertically in circle
           text.style('text-anchor', 'middle'); // Ensure horizontal centering
-          text.style('fill', '#ffffff'); // Ensure white color for the main text element
           text.style('font-size', '12px'); // Larger font size for better visibility
+          text.style('fill', '#ffffff'); // Ensure white color for the main text element
           text.style('text-shadow', '1px 1px 2px rgba(0,0,0,0.8)'); // Add text shadow for better contrast
-          
-          lines.forEach((line: string, i: number) => {
-            text.append('tspan')
-              .attr('x', 0)
-              .attr('dy', i === 0 ? '-0.3em' : '1.2em')
-              .style('fill', '#ffffff') // Ensure white color
-              .style('font-weight', 'bold')
-              .style('text-anchor', 'middle') // Ensure each line is centered
-              .style('font-size', '12px') // Larger font size for better visibility
-              .style('text-shadow', '1px 1px 2px rgba(0,0,0,0.8)') // Add text shadow for better contrast
-              .text(line.trim());
-          });
         } else {
           // For People, position text above the node
           text.text(d.title.length > 12 ? d.title.substring(0, 12) + '...' : d.title);
