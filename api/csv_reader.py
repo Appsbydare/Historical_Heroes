@@ -1,4 +1,4 @@
-import pandas as pd
+import csv
 import json
 import os
 from flask import Flask, jsonify
@@ -37,12 +37,14 @@ def read_csv_data():
         
         print(f"Reading CSV from: {csv_path}")
         
-        # Read CSV file with optimized settings
-        df = pd.read_csv(csv_path, low_memory=False)
+        # Read CSV file using built-in csv module
+        data = []
+        with open(csv_path, 'r', encoding='utf-8') as file:
+            csv_reader = csv.DictReader(file)
+            for row in csv_reader:
+                data.append(row)
         
-        # Convert to list of dictionaries and cache
-        _csv_data = df.to_dict('records')
-        
+        _csv_data = data
         print(f"Successfully loaded {len(_csv_data)} nodes from CSV")
         return _csv_data
     except Exception as e:
@@ -97,7 +99,7 @@ def get_session(session_id):
         # Count nodes by degree and type
         degree_counts = {}
         for node in csv_data:
-            degree = node.get('degree', 0)
+            degree = int(node.get('degree', 0))
             node_type = node.get('node_type', 'Unknown')
             
             if degree not in degree_counts:
@@ -147,7 +149,7 @@ def get_session_nodes(session_id):
                 'name': node.get('name', ''),
                 'url': '',  # CSV doesn't have URLs
                 'node_type': node.get('node_type', ''),
-                'degree': node.get('degree', 0),
+                'degree': int(node.get('degree', 0)),
                 'parent_url': '',  # CSV doesn't have parent URLs
                 'created_at': '2024-01-01T00:00:00',
                 'updated_at': '2024-01-01T00:00:00',
@@ -183,7 +185,7 @@ def get_network_data(session_id):
                 'id': node.get('node_id', ''),
                 'title': node.get('name', ''),
                 'node_type': node.get('node_type', ''),
-                'degree': node.get('degree', 0),
+                'degree': int(node.get('degree', 0)),
                 'description': node.get('description', ''),
                 'start_date': node.get('start_date', ''),
                 'end_date': node.get('end_date', ''),
