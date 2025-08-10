@@ -1,1 +1,0 @@
-# Database package for Wikipedia Data Extraction Project 
