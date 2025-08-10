@@ -171,16 +171,22 @@ const NetworkView = () => {
   };
 
   const handleNodeClick = async (node: NetworkNode) => {
+    console.log('Node clicked:', node); // Debug log
+    
     if (expandedNodes.has(node.id)) {
+      console.log('Node already expanded, collapsing:', node.id); // Debug log
       // Node already expanded, collapse it
       const newExpandedNodes = new Set(expandedNodes);
       newExpandedNodes.delete(node.id);
       setExpandedNodes(newExpandedNodes);
     } else {
+      console.log('Expanding node:', node.id, 'Session:', selectedSession); // Debug log
       // Expand node by loading related nodes
       try {
         setLoading(true);
+        console.log('Calling API to expand node...'); // Debug log
         const expandedData = await apiService.expandNode(selectedSession!, node.id);
+        console.log('API response:', expandedData); // Debug log
         
         // Merge new nodes and links with existing data
         const newNodes = [...networkData!.nodes];
@@ -199,6 +205,8 @@ const NetworkView = () => {
             newLinks.push(newLink);
           }
         });
+        
+        console.log('Updated network data - Nodes:', newNodes.length, 'Links:', newLinks.length); // Debug log
         
         setNetworkData({
           nodes: newNodes,
