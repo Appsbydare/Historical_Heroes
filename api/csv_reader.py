@@ -2,8 +2,10 @@ import pandas as pd
 import json
 import os
 from flask import Flask, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 # Cache the CSV data to avoid reading it multiple times
 _csv_data = None
@@ -16,8 +18,24 @@ def read_csv_data():
         return _csv_data
     
     try:
-        # Path to the CSV file
-        csv_path = os.path.join(os.path.dirname(__file__), '..', 'Nodes.csv')
+        # Try multiple possible paths for the CSV file
+        possible_paths = [
+            os.path.join(os.path.dirname(__file__), '..', 'Nodes.csv'),
+            os.path.join(os.getcwd(), 'Nodes.csv'),
+            'Nodes.csv'
+        ]
+        
+        csv_path = None
+        for path in possible_paths:
+            if os.path.exists(path):
+                csv_path = path
+                break
+        
+        if csv_path is None:
+            print("CSV file not found in any of the expected locations")
+            return []
+        
+        print(f"Reading CSV from: {csv_path}")
         
         # Read CSV file with optimized settings
         df = pd.read_csv(csv_path, low_memory=False)
@@ -25,6 +43,7 @@ def read_csv_data():
         # Convert to list of dictionaries and cache
         _csv_data = df.to_dict('records')
         
+        print(f"Successfully loaded {len(_csv_data)} nodes from CSV")
         return _csv_data
     except Exception as e:
         print(f"Error reading CSV: {e}")
@@ -36,6 +55,9 @@ def get_sessions():
     try:
         # For prototype, we'll create a single session representing the CSV data
         csv_data = read_csv_data()
+        
+        if not csv_data:
+            return jsonify({'error': 'No CSV data found'}), 500
         
         # Count nodes by type
         events_count = len([node for node in csv_data if node.get('node_type') == 'Event'])
@@ -57,6 +79,7 @@ def get_sessions():
         return jsonify([session])
         
     except Exception as e:
+        print(f"Error in get_sessions: {e}")
         return jsonify({'error': str(e)}), 500
 
 @app.route('/api/sessions/<int:session_id>', methods=['GET'])
@@ -67,6 +90,9 @@ def get_session(session_id):
             return jsonify({'error': 'Session not found'}), 404
         
         csv_data = read_csv_data()
+        
+        if not csv_data:
+            return jsonify({'error': 'No CSV data found'}), 500
         
         # Count nodes by degree and type
         degree_counts = {}
@@ -97,6 +123,7 @@ def get_session(session_id):
         })
         
     except Exception as e:
+        print(f"Error in get_session: {e}")
         return jsonify({'error': str(e)}), 500
 
 @app.route('/api/sessions/<int:session_id>/nodes', methods=['GET'])
@@ -107,6 +134,9 @@ def get_session_nodes(session_id):
             return jsonify({'error': 'Session not found'}), 404
         
         csv_data = read_csv_data()
+        
+        if not csv_data:
+            return jsonify({'error': 'No CSV data found'}), 500
         
         # Transform data to match frontend expectations
         nodes = []
@@ -131,6 +161,7 @@ def get_session_nodes(session_id):
         return jsonify(nodes)
         
     except Exception as e:
+        print(f"Error in get_session_nodes: {e}")
         return jsonify({'error': str(e)}), 500
 
 @app.route('/api/sessions/<int:session_id>/network', methods=['GET'])
@@ -141,6 +172,9 @@ def get_network_data(session_id):
             return jsonify({'error': 'Session not found'}), 404
         
         csv_data = read_csv_data()
+        
+        if not csv_data:
+            return jsonify({'error': 'No CSV data found'}), 500
         
         # Transform to network format
         network_nodes = []
@@ -166,6 +200,7 @@ def get_network_data(session_id):
         })
         
     except Exception as e:
+        print(f"Error in get_network_data: {e}")
         return jsonify({'error': str(e)}), 500
 
 @app.route('/api/extract', methods=['POST'])
@@ -180,6 +215,7 @@ def start_extraction():
         })
         
     except Exception as e:
+        print(f"Error in start_extraction: {e}")
         return jsonify({'error': str(e)}), 500
 
 @app.route('/api/extract/<int:session_id>/status', methods=['GET'])
@@ -193,6 +229,7 @@ def get_extraction_status(session_id):
         })
         
     except Exception as e:
+        print(f"Error in get_extraction_status: {e}")
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
