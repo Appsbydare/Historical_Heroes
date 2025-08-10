@@ -1,4 +1,4 @@
-# Exclude backend files that aren't needed for the API
+# Exclude ALL backend files that aren't needed for the API
 backend/
 build_release/
 ExeFile/
@@ -6,13 +6,19 @@ database/
 *.exe
 *.spec
 *.bat
+*.pyc
+*.pyo
+*.pyd
+
+# Exclude specific large files found in the project
+WikipediaExtractor.exe
+esbuild.exe
+Build_release.zip
+base_library.zip
 
 # Exclude development files
 node_modules/
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
 .env
 .env.local
 .env.production
@@ -37,6 +43,15 @@ Thumbs.db
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Exclude large files
+*.zip
+*.tar.gz
+*.rar
+
+# Exclude documentation files
+*.md
+!README.md
 
 # Keep only essential files for the prototype
 # - frontend/ (React app)

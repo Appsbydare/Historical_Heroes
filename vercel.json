@@ -22,10 +22,5 @@
       "src": "/(.*)",
       "dest": "/frontend/$1"
     }
-  ],
-  "functions": {
-    "api/csv_reader.py": {
-      "maxDuration": 30
-    }
-  }
+  ]
 } 
