@@ -150,9 +150,7 @@ const NetworkView = () => {
       .attr('x', 0)
       .attr('y', 0)
       .attr('text-anchor', 'middle')
-      .attr('dy', '0.35em')
       .style('font-size', (d) => d.node_type === 'Event' ? '8px' : '10px')
-      .style('font-weight', 'bold')
       .style('fill', (d) => d.node_type === 'Event' ? '#ffffff' : '#000000') // White text for black nodes, black text for green nodes
       .style('pointer-events', 'none')
       .each(function(d: any) {
@@ -179,6 +177,8 @@ const NetworkView = () => {
           
           // Clear existing text and add wrapped lines
           text.text('');
+          text.style('font-weight', 'bold'); // Bold for Events
+          text.attr('dy', '0.35em'); // Center vertically in circle
           lines.forEach((line: string, i: number) => {
             text.append('tspan')
               .attr('x', 0)
@@ -186,8 +186,10 @@ const NetworkView = () => {
               .text(line.trim());
           });
         } else {
-          // For People, truncate if too long
+          // For People, position text above the node
           text.text(d.title.length > 12 ? d.title.substring(0, 12) + '...' : d.title);
+          text.style('font-weight', 'normal'); // Not bold for People
+          text.attr('dy', '-1.2em'); // Position above the node
         }
       });
 
