@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-6;
+  }
+  
+  .node-event {
+    @apply fill-event-500 stroke-event-700 stroke-2;
+  }
+  
+  .node-person {
+    @apply fill-person-500 stroke-person-700 stroke-2;
+  }
+  
+  .link {
+    @apply stroke-gray-400 stroke-1;
+  }
+  
+  .link:hover {
+    @apply stroke-gray-600 stroke-2;
+  }
+} 

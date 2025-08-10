@@ -1,0 +1,3246 @@
+{
+  "session_info": [
+    1,
+    "Extraction_20250720_182118",
+    "https://en.wikipedia.org/wiki/Korean_War",
+    3,
+    323,
+    "completed",
+    "2025-07-20 12:51:18",
+    "2025-07-20 12:58:14",
+    "2025-07-20 12:51:18"
+  ],
+  "nodes": [
+    {
+      "id": 1,
+      "title": "Korean War",
+      "url": "https://en.wikipedia.org/wiki/Korean_War",
+      "node_type": "Event",
+      "degree": 0,
+      "parent_url": null,
+      "created_at": "2025-07-20 12:51:18",
+      "updated_at": "2025-07-20 12:51:18"
+    },
+    {
+      "id": 11,
+      "title": "C. Turner Joy",
+      "url": "https://en.wikipedia.org/wiki/C._Turner_Joy",
+      "node_type": "Person",
+      "degree": 1,
+      "parent_url": "https://en.wikipedia.org/wiki/Korean_War",
+      "created_at": "2025-07-20 12:51:19",
+      "updated_at": "2025-07-20 12:51:19"
+    },
+    {
+      "id": 6,
+      "title": "Douglas MacArthur",
+      "url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "node_type": "Person",
+      "degree": 1,
+      "parent_url": "https://en.wikipedia.org/wiki/Korean_War",
+      "created_at": "2025-07-20 12:51:19",
+      "updated_at": "2025-07-20 12:51:19"
+    },
+    {
+      "id": 5,
+      "title": "Dwight D. Eisenhower",
+      "url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "node_type": "Person",
+      "degree": 1,
+      "parent_url": "https://en.wikipedia.org/wiki/Korean_War",
+      "created_at": "2025-07-20 12:51:19",
+      "updated_at": "2025-07-20 12:51:19"
+    },
+    {
+      "id": 10,
+      "title": "George E. Stratemeyer",
+      "url": "https://en.wikipedia.org/wiki/George_E._Stratemeyer",
+      "node_type": "Person",
+      "degree": 1,
+      "parent_url": "https://en.wikipedia.org/wiki/Korean_War",
+      "created_at": "2025-07-20 12:51:19",
+      "updated_at": "2025-07-20 12:51:19"
+    },
+    {
+      "id": 4,
+      "title": "Harry S. Truman",
+      "url": "https://en.wikipedia.org/wiki/Harry_S._Truman",
+      "node_type": "Person",
+      "degree": 1,
+      "parent_url": "https://en.wikipedia.org/wiki/Korean_War",
+      "created_at": "2025-07-20 12:51:19",
+      "updated_at": "2025-07-20 12:51:19"
+    },
+    {
+      "id": 9,
+      "title": "James Van Fleet",
+      "url": "https://en.wikipedia.org/wiki/James_Van_Fleet",
+      "node_type": "Person",
+      "degree": 1,
+      "parent_url": "https://en.wikipedia.org/wiki/Korean_War",
+      "created_at": "2025-07-20 12:51:19",
+      "updated_at": "2025-07-20 12:51:19"
+    },
+    {
+      "id": 7,
+      "title": "Matthew Ridgway",
+      "url": "https://en.wikipedia.org/wiki/Matthew_Ridgway",
+      "node_type": "Person",
+      "degree": 1,
+      "parent_url": "https://en.wikipedia.org/wiki/Korean_War",
+      "created_at": "2025-07-20 12:51:19",
+      "updated_at": "2025-07-20 12:51:19"
+    },
+    {
+      "id": 3,
+      "title": "Paik Sun-yup",
+      "url": "https://en.wikipedia.org/wiki/Paik_Sun-yup",
+      "node_type": "Person",
+      "degree": 1,
+      "parent_url": "https://en.wikipedia.org/wiki/Korean_War",
+      "created_at": "2025-07-20 12:51:18",
+      "updated_at": "2025-07-20 12:51:18"
+    },
+    {
+      "id": 2,
+      "title": "Syngman Rhee",
+      "url": "https://en.wikipedia.org/wiki/Syngman_Rhee",
+      "node_type": "Person",
+      "degree": 1,
+      "parent_url": "https://en.wikipedia.org/wiki/Korean_War",
+      "created_at": "2025-07-20 12:51:18",
+      "updated_at": "2025-07-20 12:51:18"
+    },
+    {
+      "id": 8,
+      "title": "Walton Walker",
+      "url": "https://en.wikipedia.org/wiki/Walton_Walker",
+      "node_type": "Person",
+      "degree": 1,
+      "parent_url": "https://en.wikipedia.org/wiki/Korean_War",
+      "created_at": "2025-07-20 12:51:19",
+      "updated_at": "2025-07-20 12:51:19"
+    },
+    {
+      "id": 59,
+      "title": "Admiralty Islands campaign",
+      "url": "https://en.wikipedia.org/wiki/Admiralty_Islands_campaign",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 23,
+      "title": "Allied invasion of Italy",
+      "url": "https://en.wikipedia.org/wiki/Allied_invasion_of_Italy",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 39,
+      "title": "Banana Wars",
+      "url": "https://en.wikipedia.org/wiki/Banana_Wars",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 46,
+      "title": "Battle of Bataan",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Bataan",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 94,
+      "title": "Battle of Chipyong-ni",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Chipyong-ni",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Matthew_Ridgway",
+      "created_at": "2025-07-20 12:51:27",
+      "updated_at": "2025-07-20 12:51:27"
+    },
+    {
+      "id": 79,
+      "title": "Battle of Chosin Reservoir",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Chosin_Reservoir",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:26",
+      "updated_at": "2025-07-20 12:51:26"
+    },
+    {
+      "id": 85,
+      "title": "Battle of Hoengsong",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Hoengsong",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:26",
+      "updated_at": "2025-07-20 12:51:26"
+    },
+    {
+      "id": 71,
+      "title": "Battle of Inchon",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Inchon",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 20,
+      "title": "Battle of Kasserine Pass",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Kasserine_Pass",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 62,
+      "title": "Battle of Leyte",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Leyte",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 64,
+      "title": "Battle of Luzon",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Luzon",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 65,
+      "title": "Battle of Manila",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Manila",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 63,
+      "title": "Battle of Ormoc Bay",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Ormoc_Bay",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 70,
+      "title": "Battle of P'ohang-dong",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_P'ohang-dong",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 18,
+      "title": "Battle of Port Lyautey",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Port_Lyautey",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 68,
+      "title": "Battle of Pusan Perimeter",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Pusan_Perimeter",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 35,
+      "title": "Battle of Remagen",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Remagen",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 43,
+      "title": "Battle of Saint-Mihiel",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Saint-Mihiel",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 51,
+      "title": "Battle of Sio",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Sio",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 69,
+      "title": "Battle of Taegu",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Taegu",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 47,
+      "title": "Battle of Timor",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Timor",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 33,
+      "title": "Battle of the Bulge",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Bulge",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 78,
+      "title": "Battle of the Ch'ongch'on River",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Ch'ongch'on_River",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:26",
+      "updated_at": "2025-07-20 12:51:26"
+    },
+    {
+      "id": 48,
+      "title": "Battle of the Coral Sea",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Coral_Sea",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 27,
+      "title": "Battle of the Falaise Pocket",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Falaise_Pocket",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 12,
+      "title": "Border War",
+      "url": "https://en.wikipedia.org/wiki/Border_War",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 66,
+      "title": "Borneo campaign",
+      "url": "https://en.wikipedia.org/wiki/Borneo_campaign",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 57,
+      "title": "Bougainville campaign",
+      "url": "https://en.wikipedia.org/wiki/Bougainville_campaign",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 42,
+      "title": "Champagne-Marne Offensive",
+      "url": "https://en.wikipedia.org/wiki/Champagne-Marne_Offensive",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 96,
+      "title": "Fifth Phase Offensive",
+      "url": "https://en.wikipedia.org/wiki/Fifth_Phase_Offensive",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Matthew_Ridgway",
+      "created_at": "2025-07-20 12:51:27",
+      "updated_at": "2025-07-20 12:51:27"
+    },
+    {
+      "id": 95,
+      "title": "First and Second Battles of Wonju",
+      "url": "https://en.wikipedia.org/wiki/First_and_Second_Battles_of_Wonju",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Matthew_Ridgway",
+      "created_at": "2025-07-20 12:51:27",
+      "updated_at": "2025-07-20 12:51:27"
+    },
+    {
+      "id": 81,
+      "title": "Hungnam evacuation",
+      "url": "https://en.wikipedia.org/wiki/Hungnam_evacuation",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:26",
+      "updated_at": "2025-07-20 12:51:26"
+    },
+    {
+      "id": 50,
+      "title": "Huon Peninsula campaign",
+      "url": "https://en.wikipedia.org/wiki/Huon_Peninsula_campaign",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 21,
+      "title": "Italian campaign",
+      "url": "https://en.wikipedia.org/wiki/Italian_campaign",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 52,
+      "title": "Kokoda Track campaign",
+      "url": "https://en.wikipedia.org/wiki/Kokoda_Track_campaign",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 55,
+      "title": "Landing at Nadzab",
+      "url": "https://en.wikipedia.org/wiki/Landing_at_Nadzab",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 28,
+      "title": "Liberation of Paris",
+      "url": "https://en.wikipedia.org/wiki/Liberation_of_Paris",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 41,
+      "title": "Lunéville-Baccarat Defensive Campaign",
+      "url": "https://en.wikipedia.org/wiki/Lunéville-Baccarat_Defensive_Campaign",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 44,
+      "title": "Meuse–Argonne offensive",
+      "url": "https://en.wikipedia.org/wiki/Meuse–Argonne_offensive",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 91,
+      "title": "Mexican Border Service",
+      "url": "https://en.wikipedia.org/wiki/Mexican_Border_Service",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Matthew_Ridgway",
+      "created_at": "2025-07-20 12:51:27",
+      "updated_at": "2025-07-20 12:51:27"
+    },
+    {
+      "id": 58,
+      "title": "New Britain campaign",
+      "url": "https://en.wikipedia.org/wiki/New_Britain_campaign",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 60,
+      "title": "New Georgia campaign",
+      "url": "https://en.wikipedia.org/wiki/New_Georgia_campaign",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 49,
+      "title": "New Guinea campaign",
+      "url": "https://en.wikipedia.org/wiki/New_Guinea_campaign",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 26,
+      "title": "Normandy landings",
+      "url": "https://en.wikipedia.org/wiki/Normandy_landings",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 16,
+      "title": "North African campaign",
+      "url": "https://en.wikipedia.org/wiki/North_African_campaign",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 36,
+      "title": "Occupation of Germany",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_Germany",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 67,
+      "title": "Occupation of Japan",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_Japan",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 92,
+      "title": "Occupation of Nicaragua",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_Nicaragua",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Matthew_Ridgway",
+      "created_at": "2025-07-20 12:51:27",
+      "updated_at": "2025-07-20 12:51:27"
+    },
+    {
+      "id": 40,
+      "title": "Occupation of Veracruz",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_Veracruz",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 24,
+      "title": "Operation Avalanche",
+      "url": "https://en.wikipedia.org/wiki/Operation_Avalanche",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 53,
+      "title": "Operation Cartwheel",
+      "url": "https://en.wikipedia.org/wiki/Operation_Cartwheel",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 89,
+      "title": "Operation Courageous",
+      "url": "https://en.wikipedia.org/wiki/Operation_Courageous",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:26",
+      "updated_at": "2025-07-20 12:51:26"
+    },
+    {
+      "id": 29,
+      "title": "Operation Dragoon",
+      "url": "https://en.wikipedia.org/wiki/Operation_Dragoon",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 22,
+      "title": "Operation Husky",
+      "url": "https://en.wikipedia.org/wiki/Operation_Husky",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 87,
+      "title": "Operation Killer",
+      "url": "https://en.wikipedia.org/wiki/Operation_Killer",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:26",
+      "updated_at": "2025-07-20 12:51:26"
+    },
+    {
+      "id": 31,
+      "title": "Operation Market Garden",
+      "url": "https://en.wikipedia.org/wiki/Operation_Market_Garden",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 25,
+      "title": "Operation Overlord",
+      "url": "https://en.wikipedia.org/wiki/Operation_Overlord",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 32,
+      "title": "Operation Queen",
+      "url": "https://en.wikipedia.org/wiki/Operation_Queen",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 88,
+      "title": "Operation Ripper",
+      "url": "https://en.wikipedia.org/wiki/Operation_Ripper",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:26",
+      "updated_at": "2025-07-20 12:51:26"
+    },
+    {
+      "id": 84,
+      "title": "Operation Roundup (1951)",
+      "url": "https://en.wikipedia.org/wiki/Operation_Roundup_(1951)",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:26",
+      "updated_at": "2025-07-20 12:51:26"
+    },
+    {
+      "id": 90,
+      "title": "Operation Rugged",
+      "url": "https://en.wikipedia.org/wiki/Operation_Rugged",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:26",
+      "updated_at": "2025-07-20 12:51:26"
+    },
+    {
+      "id": 83,
+      "title": "Operation Thunderbolt (1951)",
+      "url": "https://en.wikipedia.org/wiki/Operation_Thunderbolt_(1951)",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:26",
+      "updated_at": "2025-07-20 12:51:26"
+    },
+    {
+      "id": 17,
+      "title": "Operation Torch",
+      "url": "https://en.wikipedia.org/wiki/Operation_Torch",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 93,
+      "title": "Operation Varsity",
+      "url": "https://en.wikipedia.org/wiki/Operation_Varsity",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Matthew_Ridgway",
+      "created_at": "2025-07-20 12:51:27",
+      "updated_at": "2025-07-20 12:51:27"
+    },
+    {
+      "id": 13,
+      "title": "Pancho Villa Expedition",
+      "url": "https://en.wikipedia.org/wiki/Pancho_Villa_Expedition",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 45,
+      "title": "Philippines campaign (1941–1942)",
+      "url": "https://en.wikipedia.org/wiki/Philippines_campaign_(1941–1942)",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 61,
+      "title": "Philippines campaign (1944–1945)",
+      "url": "https://en.wikipedia.org/wiki/Philippines_campaign_(1944–1945)",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 37,
+      "title": "Philippine–American War",
+      "url": "https://en.wikipedia.org/wiki/Philippine–American_War",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 38,
+      "title": "Post-war insurgency",
+      "url": "https://en.wikipedia.org/wiki/Post-war_insurgency",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 72,
+      "title": "Pusan Perimeter offensive",
+      "url": "https://en.wikipedia.org/wiki/Pusan_Perimeter_offensive",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 54,
+      "title": "Salamaua–Lae campaign",
+      "url": "https://en.wikipedia.org/wiki/Salamaua–Lae_campaign",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 73,
+      "title": "Second Battle of Seoul",
+      "url": "https://en.wikipedia.org/wiki/Second_Battle_of_Seoul",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 76,
+      "title": "Second Phase Offensive",
+      "url": "https://en.wikipedia.org/wiki/Second_Phase_Offensive",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 30,
+      "title": "Siegfried Line campaign",
+      "url": "https://en.wikipedia.org/wiki/Siegfried_Line_campaign",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 56,
+      "title": "Solomon Islands campaign",
+      "url": "https://en.wikipedia.org/wiki/Solomon_Islands_campaign",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 82,
+      "title": "Third Battle of Seoul",
+      "url": "https://en.wikipedia.org/wiki/Third_Battle_of_Seoul",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:26",
+      "updated_at": "2025-07-20 12:51:26"
+    },
+    {
+      "id": 86,
+      "title": "Third Battle of Wonju",
+      "url": "https://en.wikipedia.org/wiki/Third_Battle_of_Wonju",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:26",
+      "updated_at": "2025-07-20 12:51:26"
+    },
+    {
+      "id": 19,
+      "title": "Tunisian campaign",
+      "url": "https://en.wikipedia.org/wiki/Tunisian_campaign",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 97,
+      "title": "UN May–June 1951 counteroffensive",
+      "url": "https://en.wikipedia.org/wiki/UN_May–June_1951_counteroffensive",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Matthew_Ridgway",
+      "created_at": "2025-07-20 12:51:27",
+      "updated_at": "2025-07-20 12:51:27"
+    },
+    {
+      "id": 74,
+      "title": "UN Offensive, 1950",
+      "url": "https://en.wikipedia.org/wiki/UN_Offensive,_1950",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 77,
+      "title": "UN Offensive, 1951",
+      "url": "https://en.wikipedia.org/wiki/UN_Offensive,_1951",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 75,
+      "title": "UN offensive into North Korea",
+      "url": "https://en.wikipedia.org/wiki/UN_offensive_into_North_Korea",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:25",
+      "updated_at": "2025-07-20 12:51:25"
+    },
+    {
+      "id": 80,
+      "title": "UN retreat from North Korea",
+      "url": "https://en.wikipedia.org/wiki/UN_retreat_from_North_Korea",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Douglas_MacArthur",
+      "created_at": "2025-07-20 12:51:26",
+      "updated_at": "2025-07-20 12:51:26"
+    },
+    {
+      "id": 34,
+      "title": "Western Allied invasion of Germany",
+      "url": "https://en.wikipedia.org/wiki/Western_Allied_invasion_of_Germany",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 14,
+      "title": "World War I",
+      "url": "https://en.wikipedia.org/wiki/World_War_I",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 15,
+      "title": "World War II",
+      "url": "https://en.wikipedia.org/wiki/World_War_II",
+      "node_type": "Event",
+      "degree": 2,
+      "parent_url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "created_at": "2025-07-20 12:51:24",
+      "updated_at": "2025-07-20 12:51:24"
+    },
+    {
+      "id": 153,
+      "title": "12th Army Group",
+      "url": "https://en.wikipedia.org/wiki/12th_Army_Group",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Siegfried_Line_campaign",
+      "created_at": "2025-07-20 12:51:54",
+      "updated_at": "2025-07-20 12:51:54"
+    },
+    {
+      "id": 121,
+      "title": "15th Army Group",
+      "url": "https://en.wikipedia.org/wiki/15th_Army_Group",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Husky",
+      "created_at": "2025-07-20 12:51:45",
+      "updated_at": "2025-07-20 12:51:45"
+    },
+    {
+      "id": 134,
+      "title": "21st Army Group",
+      "url": "https://en.wikipedia.org/wiki/21st_Army_Group",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Normandy_landings",
+      "created_at": "2025-07-20 12:51:50",
+      "updated_at": "2025-07-20 12:51:50"
+    },
+    {
+      "id": 122,
+      "title": "7th Army",
+      "url": "https://en.wikipedia.org/wiki/7th_Army",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Husky",
+      "created_at": "2025-07-20 12:51:45",
+      "updated_at": "2025-07-20 12:51:45"
+    },
+    {
+      "id": 125,
+      "title": "8th Army",
+      "url": "https://en.wikipedia.org/wiki/8th_Army",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Husky",
+      "created_at": "2025-07-20 12:51:45",
+      "updated_at": "2025-07-20 12:51:45"
+    },
+    {
+      "id": 120,
+      "title": "AFHQ",
+      "url": "https://en.wikipedia.org/wiki/AFHQ",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Husky",
+      "created_at": "2025-07-20 12:51:45",
+      "updated_at": "2025-07-20 12:51:45"
+    },
+    {
+      "id": 269,
+      "title": "Aaron S. Merrill",
+      "url": "https://en.wikipedia.org/wiki/Aaron_S._Merrill",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/New_Georgia_campaign",
+      "created_at": "2025-07-20 12:52:33",
+      "updated_at": "2025-07-20 12:52:33"
+    },
+    {
+      "id": 174,
+      "title": "Adna Chaffee",
+      "url": "https://en.wikipedia.org/wiki/Adna_Chaffee",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippine–American_War",
+      "created_at": "2025-07-20 12:52:03",
+      "updated_at": "2025-07-20 12:52:03"
+    },
+    {
+      "id": 108,
+      "title": "Alan Cunningham",
+      "url": "https://en.wikipedia.org/wiki/Alan_Cunningham",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/North_African_campaign",
+      "created_at": "2025-07-20 12:51:38",
+      "updated_at": "2025-07-20 12:51:38"
+    },
+    {
+      "id": 138,
+      "title": "Alan Goodrich Kirk",
+      "url": "https://en.wikipedia.org/wiki/Alan_Goodrich_Kirk",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Normandy_landings",
+      "created_at": "2025-07-20 12:51:50",
+      "updated_at": "2025-07-20 12:51:50"
+    },
+    {
+      "id": 259,
+      "title": "Alan Ramsay",
+      "url": "https://en.wikipedia.org/wiki/Alan_Ramsay",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Bougainville_campaign",
+      "created_at": "2025-07-20 12:52:30",
+      "updated_at": "2025-07-20 12:52:30"
+    },
+    {
+      "id": 255,
+      "title": "Alexander A. Vandegrift",
+      "url": "https://en.wikipedia.org/wiki/Alexander_A._Vandegrift",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Bougainville_campaign",
+      "created_at": "2025-07-20 12:52:30",
+      "updated_at": "2025-07-20 12:52:30"
+    },
+    {
+      "id": 147,
+      "title": "Alexander Patch",
+      "url": "https://en.wikipedia.org/wiki/Alexander_Patch",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Dragoon",
+      "created_at": "2025-07-20 12:51:53",
+      "updated_at": "2025-07-20 12:51:53"
+    },
+    {
+      "id": 201,
+      "title": "Alexander Spence",
+      "url": "https://en.wikipedia.org/wiki/Alexander_Spence",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Timor",
+      "created_at": "2025-07-20 12:52:17",
+      "updated_at": "2025-07-20 12:52:17"
+    },
+    {
+      "id": 232,
+      "title": "Alexander Vandegrift",
+      "url": "https://en.wikipedia.org/wiki/Alexander_Vandegrift",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Cartwheel",
+      "created_at": "2025-07-20 12:52:25",
+      "updated_at": "2025-07-20 12:52:25"
+    },
+    {
+      "id": 256,
+      "title": "Allen H. Turnage",
+      "url": "https://en.wikipedia.org/wiki/Allen_H._Turnage",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Bougainville_campaign",
+      "created_at": "2025-07-20 12:52:30",
+      "updated_at": "2025-07-20 12:52:30"
+    },
+    {
+      "id": 119,
+      "title": "Alphonse Juin",
+      "url": "https://en.wikipedia.org/wiki/Alphonse_Juin",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Kasserine_Pass",
+      "created_at": "2025-07-20 12:51:42",
+      "updated_at": "2025-07-20 12:51:42"
+    },
+    {
+      "id": 116,
+      "title": "Andrew Cunningham",
+      "url": "https://en.wikipedia.org/wiki/Andrew_Cunningham",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Torch",
+      "created_at": "2025-07-20 12:51:39",
+      "updated_at": "2025-07-20 12:51:39"
+    },
+    {
+      "id": 283,
+      "title": "Antonio Rodriguez",
+      "url": "https://en.wikipedia.org/wiki/Antonio_Rodriguez",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Luzon",
+      "created_at": "2025-07-20 12:52:38",
+      "updated_at": "2025-07-20 12:52:38"
+    },
+    {
+      "id": 105,
+      "title": "Archibald Wavell",
+      "url": "https://en.wikipedia.org/wiki/Archibald_Wavell",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/North_African_campaign",
+      "created_at": "2025-07-20 12:51:38",
+      "updated_at": "2025-07-20 12:51:38"
+    },
+    {
+      "id": 225,
+      "title": "Arthur Allen",
+      "url": "https://en.wikipedia.org/wiki/Arthur_Allen",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Kokoda_Track_campaign",
+      "created_at": "2025-07-20 12:52:24",
+      "updated_at": "2025-07-20 12:52:24"
+    },
+    {
+      "id": 214,
+      "title": "Arthur Carpender",
+      "url": "https://en.wikipedia.org/wiki/Arthur_Carpender",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/New_Guinea_campaign",
+      "created_at": "2025-07-20 12:52:20",
+      "updated_at": "2025-07-20 12:52:20"
+    },
+    {
+      "id": 141,
+      "title": "Arthur Coningham",
+      "url": "https://en.wikipedia.org/wiki/Arthur_Coningham",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_the_Falaise_Pocket",
+      "created_at": "2025-07-20 12:51:51",
+      "updated_at": "2025-07-20 12:51:51"
+    },
+    {
+      "id": 288,
+      "title": "Arthur Dewey Struble",
+      "url": "https://en.wikipedia.org/wiki/Arthur_Dewey_Struble",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Pusan_Perimeter",
+      "created_at": "2025-07-20 12:52:43",
+      "updated_at": "2025-07-20 12:52:43"
+    },
+    {
+      "id": 165,
+      "title": "Arthur Harris",
+      "url": "https://en.wikipedia.org/wiki/Arthur_Harris",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_the_Bulge",
+      "created_at": "2025-07-20 12:51:58",
+      "updated_at": "2025-07-20 12:51:58"
+    },
+    {
+      "id": 172,
+      "title": "Arthur MacArthur, Jr.",
+      "url": "https://en.wikipedia.org/wiki/Arthur_MacArthur,_Jr.",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippine–American_War",
+      "created_at": "2025-07-20 12:52:03",
+      "updated_at": "2025-07-20 12:52:03"
+    },
+    {
+      "id": 239,
+      "title": "Arthur S. Carpender",
+      "url": "https://en.wikipedia.org/wiki/Arthur_S._Carpender",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Cartwheel",
+      "created_at": "2025-07-20 12:52:25",
+      "updated_at": "2025-07-20 12:52:25"
+    },
+    {
+      "id": 128,
+      "title": "Arthur Tedder",
+      "url": "https://en.wikipedia.org/wiki/Arthur_Tedder",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Husky",
+      "created_at": "2025-07-20 12:51:45",
+      "updated_at": "2025-07-20 12:51:45"
+    },
+    {
+      "id": 207,
+      "title": "Aubrey Fitch",
+      "url": "https://en.wikipedia.org/wiki/Aubrey_Fitch",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_the_Coral_Sea",
+      "created_at": "2025-07-20 12:52:19",
+      "updated_at": "2025-07-20 12:52:19"
+    },
+    {
+      "id": 303,
+      "title": "Basil Aubrey Coad",
+      "url": "https://en.wikipedia.org/wiki/Basil_Aubrey_Coad",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_the_Ch'ongch'on_River",
+      "created_at": "2025-07-20 12:52:55",
+      "updated_at": "2025-07-20 12:52:55"
+    },
+    {
+      "id": 282,
+      "title": "Basilio J. Valdes",
+      "url": "https://en.wikipedia.org/wiki/Basilio_J._Valdes",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Luzon",
+      "created_at": "2025-07-20 12:52:38",
+      "updated_at": "2025-07-20 12:52:38"
+    },
+    {
+      "id": 202,
+      "title": "Bernard Callinan",
+      "url": "https://en.wikipedia.org/wiki/Bernard_Callinan",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Timor",
+      "created_at": "2025-07-20 12:52:17",
+      "updated_at": "2025-07-20 12:52:17"
+    },
+    {
+      "id": 217,
+      "title": "Bernard Evans",
+      "url": "https://en.wikipedia.org/wiki/Bernard_Evans",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Huon_Peninsula_campaign",
+      "created_at": "2025-07-20 12:52:21",
+      "updated_at": "2025-07-20 12:52:21"
+    },
+    {
+      "id": 110,
+      "title": "Bernard Montgomery",
+      "url": "https://en.wikipedia.org/wiki/Bernard_Montgomery",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/North_African_campaign",
+      "created_at": "2025-07-20 12:51:38",
+      "updated_at": "2025-07-20 12:51:38"
+    },
+    {
+      "id": 132,
+      "title": "Bertram Ramsay",
+      "url": "https://en.wikipedia.org/wiki/Bertram_Ramsay",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Overlord",
+      "created_at": "2025-07-20 12:51:48",
+      "updated_at": "2025-07-20 12:51:48"
+    },
+    {
+      "id": 160,
+      "title": "Brian Horrocks",
+      "url": "https://en.wikipedia.org/wiki/Brian_Horrocks",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Market_Garden",
+      "created_at": "2025-07-20 12:51:56",
+      "updated_at": "2025-07-20 12:51:56"
+    },
+    {
+      "id": 308,
+      "title": "Bryant E. Moore",
+      "url": "https://en.wikipedia.org/wiki/Bryant_E._Moore",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Thunderbolt_(1951)",
+      "created_at": "2025-07-20 12:53:01",
+      "updated_at": "2025-07-20 12:53:01"
+    },
+    {
+      "id": 310,
+      "title": "Bryant Moore",
+      "url": "https://en.wikipedia.org/wiki/Bryant_Moore",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Killer",
+      "created_at": "2025-07-20 12:53:06",
+      "updated_at": "2025-07-20 12:53:06"
+    },
+    {
+      "id": 164,
+      "title": "Carl Spaatz",
+      "url": "https://en.wikipedia.org/wiki/Carl_Spaatz",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_the_Bulge",
+      "created_at": "2025-07-20 12:51:58",
+      "updated_at": "2025-07-20 12:51:58"
+    },
+    {
+      "id": 220,
+      "title": "Cedric Edgar",
+      "url": "https://en.wikipedia.org/wiki/Cedric_Edgar",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Huon_Peninsula_campaign",
+      "created_at": "2025-07-20 12:52:21",
+      "updated_at": "2025-07-20 12:52:21"
+    },
+    {
+      "id": 306,
+      "title": "Chang Do-yong",
+      "url": "https://en.wikipedia.org/wiki/Chang_Do-yong",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Third_Battle_of_Seoul",
+      "created_at": "2025-07-20 12:53:00",
+      "updated_at": "2025-07-20 12:53:00"
+    },
+    {
+      "id": 143,
+      "title": "Charles de Gaulle",
+      "url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Liberation_of_Paris",
+      "created_at": "2025-07-20 12:51:52",
+      "updated_at": "2025-07-20 12:51:52"
+    },
+    {
+      "id": 244,
+      "title": "Chester Nimitz",
+      "url": "https://en.wikipedia.org/wiki/Chester_Nimitz",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Solomon_Islands_campaign",
+      "created_at": "2025-07-20 12:52:29",
+      "updated_at": "2025-07-20 12:52:29"
+    },
+    {
+      "id": 104,
+      "title": "Chiang Kai-shek",
+      "url": "https://en.wikipedia.org/wiki/Chiang_Kai-shek",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/World_War_II",
+      "created_at": "2025-07-20 12:51:36",
+      "updated_at": "2025-07-20 12:51:36"
+    },
+    {
+      "id": 285,
+      "title": "Chung Il-Kwon",
+      "url": "https://en.wikipedia.org/wiki/Chung_Il-Kwon",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Pusan_Perimeter",
+      "created_at": "2025-07-20 12:52:43",
+      "updated_at": "2025-07-20 12:52:43"
+    },
+    {
+      "id": 309,
+      "title": "Clark L. Ruffner",
+      "url": "https://en.wikipedia.org/wiki/Clark_L._Ruffner",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Hoengsong",
+      "created_at": "2025-07-20 12:53:03",
+      "updated_at": "2025-07-20 12:53:03"
+    },
+    {
+      "id": 321,
+      "title": "Clark Ruffner",
+      "url": "https://en.wikipedia.org/wiki/Clark_Ruffner",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/First_and_Second_Battles_of_Wonju",
+      "created_at": "2025-07-20 12:53:15",
+      "updated_at": "2025-07-20 12:53:15"
+    },
+    {
+      "id": 106,
+      "title": "Claude Auchinleck",
+      "url": "https://en.wikipedia.org/wiki/Claude_Auchinleck",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/North_African_campaign",
+      "created_at": "2025-07-20 12:51:38",
+      "updated_at": "2025-07-20 12:51:38"
+    },
+    {
+      "id": 140,
+      "title": "Courtney Hodges",
+      "url": "https://en.wikipedia.org/wiki/Courtney_Hodges",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_the_Falaise_Pocket",
+      "created_at": "2025-07-20 12:51:51",
+      "updated_at": "2025-07-20 12:51:51"
+    },
+    {
+      "id": 296,
+      "title": "David G. Barr",
+      "url": "https://en.wikipedia.org/wiki/David_G._Barr",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Second_Battle_of_Seoul",
+      "created_at": "2025-07-20 12:52:48",
+      "updated_at": "2025-07-20 12:52:48"
+    },
+    {
+      "id": 218,
+      "title": "David Whitehead",
+      "url": "https://en.wikipedia.org/wiki/David_Whitehead",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Huon_Peninsula_campaign",
+      "created_at": "2025-07-20 12:52:21",
+      "updated_at": "2025-07-20 12:52:21"
+    },
+    {
+      "id": 323,
+      "title": "Dionysios Arbouzis",
+      "url": "https://en.wikipedia.org/wiki/Dionysios_Arbouzis",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/First_and_Second_Battles_of_Wonju",
+      "created_at": "2025-07-20 12:53:15",
+      "updated_at": "2025-07-20 12:53:15"
+    },
+    {
+      "id": 203,
+      "title": "Dom Aleixo",
+      "url": "https://en.wikipedia.org/wiki/Dom_Aleixo",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Timor",
+      "created_at": "2025-07-20 12:52:17",
+      "updated_at": "2025-07-20 12:52:17"
+    },
+    {
+      "id": 161,
+      "title": "Dwight Eisenhower",
+      "url": "https://en.wikipedia.org/wiki/Dwight_Eisenhower",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Queen",
+      "created_at": "2025-07-20 12:51:57",
+      "updated_at": "2025-07-20 12:51:57"
+    },
+    {
+      "id": 295,
+      "title": "Earle E. Partridge",
+      "url": "https://en.wikipedia.org/wiki/Earle_E._Partridge",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Pusan_Perimeter_offensive",
+      "created_at": "2025-07-20 12:52:47",
+      "updated_at": "2025-07-20 12:52:47"
+    },
+    {
+      "id": 149,
+      "title": "Edgard de Larminat",
+      "url": "https://en.wikipedia.org/wiki/Edgard_de_Larminat",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Dragoon",
+      "created_at": "2025-07-20 12:51:53",
+      "updated_at": "2025-07-20 12:51:53"
+    },
+    {
+      "id": 224,
+      "title": "Edmund Herring",
+      "url": "https://en.wikipedia.org/wiki/Edmund_Herring",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Kokoda_Track_campaign",
+      "created_at": "2025-07-20 12:52:24",
+      "updated_at": "2025-07-20 12:52:24"
+    },
+    {
+      "id": 298,
+      "title": "Edward Almond",
+      "url": "https://en.wikipedia.org/wiki/Edward_Almond",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/UN_offensive_into_North_Korea",
+      "created_at": "2025-07-20 12:52:51",
+      "updated_at": "2025-07-20 12:52:51"
+    },
+    {
+      "id": 290,
+      "title": "Edward M. Almond",
+      "url": "https://en.wikipedia.org/wiki/Edward_M._Almond",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Inchon",
+      "created_at": "2025-07-20 12:52:46",
+      "updated_at": "2025-07-20 12:52:46"
+    },
+    {
+      "id": 242,
+      "title": "Edward Milford",
+      "url": "https://en.wikipedia.org/wiki/Edward_Milford",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Salamaua–Lae_campaign",
+      "created_at": "2025-07-20 12:52:26",
+      "updated_at": "2025-07-20 12:52:26"
+    },
+    {
+      "id": 196,
+      "title": "Edward P. King",
+      "url": "https://en.wikipedia.org/wiki/Edward_P._King",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Bataan",
+      "created_at": "2025-07-20 12:52:16",
+      "updated_at": "2025-07-20 12:52:16"
+    },
+    {
+      "id": 173,
+      "title": "Elwell Stephen Otis",
+      "url": "https://en.wikipedia.org/wiki/Elwell_Stephen_Otis",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippine–American_War",
+      "created_at": "2025-07-20 12:52:03",
+      "updated_at": "2025-07-20 12:52:03"
+    },
+    {
+      "id": 318,
+      "title": "Eric Bols",
+      "url": "https://en.wikipedia.org/wiki/Eric_Bols",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Varsity",
+      "created_at": "2025-07-20 12:53:13",
+      "updated_at": "2025-07-20 12:53:13"
+    },
+    {
+      "id": 252,
+      "title": "Eric Feldt",
+      "url": "https://en.wikipedia.org/wiki/Eric_Feldt",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Solomon_Islands_campaign",
+      "created_at": "2025-07-20 12:52:29",
+      "updated_at": "2025-07-20 12:52:29"
+    },
+    {
+      "id": 186,
+      "title": "Ernest Joseph Blondlat",
+      "url": "https://en.wikipedia.org/wiki/Ernest_Joseph_Blondlat",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Saint-Mihiel",
+      "created_at": "2025-07-20 12:52:12",
+      "updated_at": "2025-07-20 12:52:12"
+    },
+    {
+      "id": 135,
+      "title": "First Army",
+      "url": "https://en.wikipedia.org/wiki/First_Army",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Normandy_landings",
+      "created_at": "2025-07-20 12:51:50",
+      "updated_at": "2025-07-20 12:51:50"
+    },
+    {
+      "id": 221,
+      "title": "Frank Berryman",
+      "url": "https://en.wikipedia.org/wiki/Frank_Berryman",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Huon_Peninsula_campaign",
+      "created_at": "2025-07-20 12:52:21",
+      "updated_at": "2025-07-20 12:52:21"
+    },
+    {
+      "id": 182,
+      "title": "Frank Fletcher",
+      "url": "https://en.wikipedia.org/wiki/Frank_Fletcher",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Occupation_of_Veracruz",
+      "created_at": "2025-07-20 12:52:07",
+      "updated_at": "2025-07-20 12:52:07"
+    },
+    {
+      "id": 206,
+      "title": "Frank J. Fletcher",
+      "url": "https://en.wikipedia.org/wiki/Frank_J._Fletcher",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_the_Coral_Sea",
+      "created_at": "2025-07-20 12:52:19",
+      "updated_at": "2025-07-20 12:52:19"
+    },
+    {
+      "id": 247,
+      "title": "Frank Jack Fletcher",
+      "url": "https://en.wikipedia.org/wiki/Frank_Jack_Fletcher",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Solomon_Islands_campaign",
+      "created_at": "2025-07-20 12:52:29",
+      "updated_at": "2025-07-20 12:52:29"
+    },
+    {
+      "id": 311,
+      "title": "Frank S. Bowen",
+      "url": "https://en.wikipedia.org/wiki/Frank_S._Bowen",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Courageous",
+      "created_at": "2025-07-20 12:53:08",
+      "updated_at": "2025-07-20 12:53:08"
+    },
+    {
+      "id": 294,
+      "title": "Frank W. Milburn",
+      "url": "https://en.wikipedia.org/wiki/Frank_W._Milburn",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Pusan_Perimeter_offensive",
+      "created_at": "2025-07-20 12:52:47",
+      "updated_at": "2025-07-20 12:52:47"
+    },
+    {
+      "id": 276,
+      "title": "Franklin C. Sibert",
+      "url": "https://en.wikipedia.org/wiki/Franklin_C._Sibert",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Leyte",
+      "created_at": "2025-07-20 12:52:36",
+      "updated_at": "2025-07-20 12:52:36"
+    },
+    {
+      "id": 102,
+      "title": "Franklin D. Roosevelt",
+      "url": "https://en.wikipedia.org/wiki/Franklin_D._Roosevelt",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/World_War_II",
+      "created_at": "2025-07-20 12:51:36",
+      "updated_at": "2025-07-20 12:51:36"
+    },
+    {
+      "id": 117,
+      "title": "François Darlan",
+      "url": "https://en.wikipedia.org/wiki/François_Darlan",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Torch",
+      "created_at": "2025-07-20 12:51:39",
+      "updated_at": "2025-07-20 12:51:39"
+    },
+    {
+      "id": 155,
+      "title": "Frederick Browning",
+      "url": "https://en.wikipedia.org/wiki/Frederick_Browning",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Market_Garden",
+      "created_at": "2025-07-20 12:51:56",
+      "updated_at": "2025-07-20 12:51:56"
+    },
+    {
+      "id": 268,
+      "title": "Frederick Moosbrugger",
+      "url": "https://en.wikipedia.org/wiki/Frederick_Moosbrugger",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/New_Georgia_campaign",
+      "created_at": "2025-07-20 12:52:33",
+      "updated_at": "2025-07-20 12:52:33"
+    },
+    {
+      "id": 177,
+      "title": "Frederick N. Funston",
+      "url": "https://en.wikipedia.org/wiki/Frederick_N._Funston",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippine–American_War",
+      "created_at": "2025-07-20 12:52:03",
+      "updated_at": "2025-07-20 12:52:03"
+    },
+    {
+      "id": 124,
+      "title": "Geoffrey Keyes",
+      "url": "https://en.wikipedia.org/wiki/Geoffrey_Keyes",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Husky",
+      "created_at": "2025-07-20 12:51:45",
+      "updated_at": "2025-07-20 12:51:45"
+    },
+    {
+      "id": 243,
+      "title": "George Alan Vasey",
+      "url": "https://en.wikipedia.org/wiki/George_Alan_Vasey",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Landing_at_Nadzab",
+      "created_at": "2025-07-20 12:52:27",
+      "updated_at": "2025-07-20 12:52:27"
+    },
+    {
+      "id": 209,
+      "title": "George Brett",
+      "url": "https://en.wikipedia.org/wiki/George_Brett",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_the_Coral_Sea",
+      "created_at": "2025-07-20 12:52:19",
+      "updated_at": "2025-07-20 12:52:19"
+    },
+    {
+      "id": 278,
+      "title": "George C. Kenney",
+      "url": "https://en.wikipedia.org/wiki/George_C._Kenney",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Leyte",
+      "created_at": "2025-07-20 12:52:36",
+      "updated_at": "2025-07-20 12:52:36"
+    },
+    {
+      "id": 185,
+      "title": "George H. Cameron",
+      "url": "https://en.wikipedia.org/wiki/George_H._Cameron",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Saint-Mihiel",
+      "created_at": "2025-07-20 12:52:12",
+      "updated_at": "2025-07-20 12:52:12"
+    },
+    {
+      "id": 212,
+      "title": "George Kenney",
+      "url": "https://en.wikipedia.org/wiki/George_Kenney",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/New_Guinea_campaign",
+      "created_at": "2025-07-20 12:52:20",
+      "updated_at": "2025-07-20 12:52:20"
+    },
+    {
+      "id": 113,
+      "title": "George S. Patton",
+      "url": "https://en.wikipedia.org/wiki/George_S._Patton",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Torch",
+      "created_at": "2025-07-20 12:51:39",
+      "updated_at": "2025-07-20 12:51:39"
+    },
+    {
+      "id": 287,
+      "title": "George Stratemeyer",
+      "url": "https://en.wikipedia.org/wiki/George_Stratemeyer",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Pusan_Perimeter",
+      "created_at": "2025-07-20 12:52:43",
+      "updated_at": "2025-07-20 12:52:43"
+    },
+    {
+      "id": 226,
+      "title": "George Vasey",
+      "url": "https://en.wikipedia.org/wiki/George_Vasey",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Kokoda_Track_campaign",
+      "created_at": "2025-07-20 12:52:24",
+      "updated_at": "2025-07-20 12:52:24"
+    },
+    {
+      "id": 179,
+      "title": "George W. Davis",
+      "url": "https://en.wikipedia.org/wiki/George_W._Davis",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippine–American_War",
+      "created_at": "2025-07-20 12:52:03",
+      "updated_at": "2025-07-20 12:52:03"
+    },
+    {
+      "id": 215,
+      "title": "George Wootten",
+      "url": "https://en.wikipedia.org/wiki/George_Wootten",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Huon_Peninsula_campaign",
+      "created_at": "2025-07-20 12:52:21",
+      "updated_at": "2025-07-20 12:52:21"
+    },
+    {
+      "id": 279,
+      "title": "Government",
+      "url": "https://en.wikipedia.org/wiki/Government",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Leyte",
+      "created_at": "2025-07-20 12:52:36",
+      "updated_at": "2025-07-20 12:52:36"
+    },
+    {
+      "id": 261,
+      "title": "H. E. Barrowclough",
+      "url": "https://en.wikipedia.org/wiki/H._E._Barrowclough",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Bougainville_campaign",
+      "created_at": "2025-07-20 12:52:30",
+      "updated_at": "2025-07-20 12:52:30"
+    },
+    {
+      "id": 107,
+      "title": "Harold Alexander",
+      "url": "https://en.wikipedia.org/wiki/Harold_Alexander",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/North_African_campaign",
+      "created_at": "2025-07-20 12:51:38",
+      "updated_at": "2025-07-20 12:51:38"
+    },
+    {
+      "id": 234,
+      "title": "Harold Barrowclough",
+      "url": "https://en.wikipedia.org/wiki/Harold_Barrowclough",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Cartwheel",
+      "created_at": "2025-07-20 12:52:25",
+      "updated_at": "2025-07-20 12:52:25"
+    },
+    {
+      "id": 272,
+      "title": "Harry B. Liversedge",
+      "url": "https://en.wikipedia.org/wiki/Harry_B._Liversedge",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/New_Georgia_campaign",
+      "created_at": "2025-07-20 12:52:33",
+      "updated_at": "2025-07-20 12:52:33"
+    },
+    {
+      "id": 139,
+      "title": "Harry Crerar",
+      "url": "https://en.wikipedia.org/wiki/Harry_Crerar",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_the_Falaise_Pocket",
+      "created_at": "2025-07-20 12:51:51",
+      "updated_at": "2025-07-20 12:51:51"
+    },
+    {
+      "id": 189,
+      "title": "Henri Berthelot",
+      "url": "https://en.wikipedia.org/wiki/Henri_Berthelot",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Meuse–Argonne_offensive",
+      "created_at": "2025-07-20 12:52:13",
+      "updated_at": "2025-07-20 12:52:13"
+    },
+    {
+      "id": 112,
+      "title": "Henri Giraud",
+      "url": "https://en.wikipedia.org/wiki/Henri_Giraud",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/North_African_campaign",
+      "created_at": "2025-07-20 12:51:38",
+      "updated_at": "2025-07-20 12:51:38"
+    },
+    {
+      "id": 188,
+      "title": "Henri Gouraud",
+      "url": "https://en.wikipedia.org/wiki/Henri_Gouraud",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Meuse–Argonne_offensive",
+      "created_at": "2025-07-20 12:52:13",
+      "updated_at": "2025-07-20 12:52:13"
+    },
+    {
+      "id": 114,
+      "title": "Henry Kent Hewitt",
+      "url": "https://en.wikipedia.org/wiki/Henry_Kent_Hewitt",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Torch",
+      "created_at": "2025-07-20 12:51:39",
+      "updated_at": "2025-07-20 12:51:39"
+    },
+    {
+      "id": 175,
+      "title": "Henry Lawton",
+      "url": "https://en.wikipedia.org/wiki/Henry_Lawton",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippine–American_War",
+      "created_at": "2025-07-20 12:52:03",
+      "updated_at": "2025-07-20 12:52:03"
+    },
+    {
+      "id": 192,
+      "title": "Hideyoshi Obata",
+      "url": "https://en.wikipedia.org/wiki/Hideyoshi_Obata",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippines_campaign_(1941–1942)",
+      "created_at": "2025-07-20 12:52:14",
+      "updated_at": "2025-07-20 12:52:14"
+    },
+    {
+      "id": 266,
+      "title": "Horace Robertson",
+      "url": "https://en.wikipedia.org/wiki/Horace_Robertson",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/New_Britain_campaign",
+      "created_at": "2025-07-20 12:52:31",
+      "updated_at": "2025-07-20 12:52:31"
+    },
+    {
+      "id": 183,
+      "title": "Hunter Liggett",
+      "url": "https://en.wikipedia.org/wiki/Hunter_Liggett",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Saint-Mihiel",
+      "created_at": "2025-07-20 12:52:12",
+      "updated_at": "2025-07-20 12:52:12"
+    },
+    {
+      "id": 193,
+      "title": "Ibō Takahashi",
+      "url": "https://en.wikipedia.org/wiki/Ibō_Takahashi",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippines_campaign_(1941–1942)",
+      "created_at": "2025-07-20 12:52:14",
+      "updated_at": "2025-07-20 12:52:14"
+    },
+    {
+      "id": 178,
+      "title": "J. Franklin Bell",
+      "url": "https://en.wikipedia.org/wiki/J._Franklin_Bell",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippine–American_War",
+      "created_at": "2025-07-20 12:52:03",
+      "updated_at": "2025-07-20 12:52:03"
+    },
+    {
+      "id": 166,
+      "title": "Jacob Devers",
+      "url": "https://en.wikipedia.org/wiki/Jacob_Devers",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Western_Allied_invasion_of_Germany",
+      "created_at": "2025-07-20 12:52:00",
+      "updated_at": "2025-07-20 12:52:00"
+    },
+    {
+      "id": 170,
+      "title": "Jacob G. Schurman",
+      "url": "https://en.wikipedia.org/wiki/Jacob_G._Schurman",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippine–American_War",
+      "created_at": "2025-07-20 12:52:03",
+      "updated_at": "2025-07-20 12:52:03"
+    },
+    {
+      "id": 146,
+      "title": "Jacob L. Devers",
+      "url": "https://en.wikipedia.org/wiki/Jacob_L._Devers",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Dragoon",
+      "created_at": "2025-07-20 12:51:53",
+      "updated_at": "2025-07-20 12:51:53"
+    },
+    {
+      "id": 144,
+      "title": "Jacques Chaban-Delmas",
+      "url": "https://en.wikipedia.org/wiki/Jacques_Chaban-Delmas",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Liberation_of_Paris",
+      "created_at": "2025-07-20 12:51:52",
+      "updated_at": "2025-07-20 12:51:52"
+    },
+    {
+      "id": 304,
+      "title": "James H. Doyle",
+      "url": "https://en.wikipedia.org/wiki/James_H._Doyle",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Hungnam_evacuation",
+      "created_at": "2025-07-20 12:52:59",
+      "updated_at": "2025-07-20 12:52:59"
+    },
+    {
+      "id": 159,
+      "title": "James M. Gavin",
+      "url": "https://en.wikipedia.org/wiki/James_M._Gavin",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Market_Garden",
+      "created_at": "2025-07-20 12:51:56",
+      "updated_at": "2025-07-20 12:51:56"
+    },
+    {
+      "id": 148,
+      "title": "Jean de Tassigny",
+      "url": "https://en.wikipedia.org/wiki/Jean_de_Tassigny",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Dragoon",
+      "created_at": "2025-07-20 12:51:53",
+      "updated_at": "2025-07-20 12:51:53"
+    },
+    {
+      "id": 297,
+      "title": "John B. Coulter",
+      "url": "https://en.wikipedia.org/wiki/John_B._Coulter",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/UN_offensive_into_North_Korea",
+      "created_at": "2025-07-20 12:52:51",
+      "updated_at": "2025-07-20 12:52:51"
+    },
+    {
+      "id": 210,
+      "title": "John Crace",
+      "url": "https://en.wikipedia.org/wiki/John_Crace",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_the_Coral_Sea",
+      "created_at": "2025-07-20 12:52:19",
+      "updated_at": "2025-07-20 12:52:19"
+    },
+    {
+      "id": 274,
+      "title": "John H. Hester",
+      "url": "https://en.wikipedia.org/wiki/John_H._Hester",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/New_Georgia_campaign",
+      "created_at": "2025-07-20 12:52:33",
+      "updated_at": "2025-07-20 12:52:33"
+    },
+    {
+      "id": 99,
+      "title": "John J. Pershing",
+      "url": "https://en.wikipedia.org/wiki/John_J._Pershing",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Pancho_Villa_Expedition",
+      "created_at": "2025-07-20 12:51:33",
+      "updated_at": "2025-07-20 12:51:33"
+    },
+    {
+      "id": 151,
+      "title": "John K. Cannon",
+      "url": "https://en.wikipedia.org/wiki/John_K._Cannon",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Dragoon",
+      "created_at": "2025-07-20 12:51:53",
+      "updated_at": "2025-07-20 12:51:53"
+    },
+    {
+      "id": 228,
+      "title": "John Lavarack",
+      "url": "https://en.wikipedia.org/wiki/John_Lavarack",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Cartwheel",
+      "created_at": "2025-07-20 12:52:25",
+      "updated_at": "2025-07-20 12:52:25"
+    },
+    {
+      "id": 277,
+      "title": "John R. Hodge",
+      "url": "https://en.wikipedia.org/wiki/John_R._Hodge",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Leyte",
+      "created_at": "2025-07-20 12:52:36",
+      "updated_at": "2025-07-20 12:52:36"
+    },
+    {
+      "id": 195,
+      "title": "Jonathan Wainwright",
+      "url": "https://en.wikipedia.org/wiki/Jonathan_Wainwright",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Bataan",
+      "created_at": "2025-07-20 12:52:16",
+      "updated_at": "2025-07-20 12:52:16"
+    },
+    {
+      "id": 315,
+      "title": "Joseph Pendleton",
+      "url": "https://en.wikipedia.org/wiki/Joseph_Pendleton",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Occupation_of_Nicaragua",
+      "created_at": "2025-07-20 12:53:11",
+      "updated_at": "2025-07-20 12:53:11"
+    },
+    {
+      "id": 289,
+      "title": "Joseph S. Bradley",
+      "url": "https://en.wikipedia.org/wiki/Joseph_S._Bradley",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_P'ohang-dong",
+      "created_at": "2025-07-20 12:52:45",
+      "updated_at": "2025-07-20 12:52:45"
+    },
+    {
+      "id": 101,
+      "title": "Joseph Stalin",
+      "url": "https://en.wikipedia.org/wiki/Joseph_Stalin",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/World_War_II",
+      "created_at": "2025-07-20 12:51:36",
+      "updated_at": "2025-07-20 12:51:36"
+    },
+    {
+      "id": 184,
+      "title": "Joseph T. Dickman",
+      "url": "https://en.wikipedia.org/wiki/Joseph_T._Dickman",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Saint-Mihiel",
+      "created_at": "2025-07-20 12:52:12",
+      "updated_at": "2025-07-20 12:52:12"
+    },
+    {
+      "id": 150,
+      "title": "Joseph de Monsabert",
+      "url": "https://en.wikipedia.org/wiki/Joseph_de_Monsabert",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Dragoon",
+      "created_at": "2025-07-20 12:51:53",
+      "updated_at": "2025-07-20 12:51:53"
+    },
+    {
+      "id": 263,
+      "title": "Julian Cunningham",
+      "url": "https://en.wikipedia.org/wiki/Julian_Cunningham",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/New_Britain_campaign",
+      "created_at": "2025-07-20 12:52:31",
+      "updated_at": "2025-07-20 12:52:31"
+    },
+    {
+      "id": 111,
+      "title": "Kenneth Anderson",
+      "url": "https://en.wikipedia.org/wiki/Kenneth_Anderson",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/North_African_campaign",
+      "created_at": "2025-07-20 12:51:38",
+      "updated_at": "2025-07-20 12:51:38"
+    },
+    {
+      "id": 300,
+      "title": "Laurence B. Keiser",
+      "url": "https://en.wikipedia.org/wiki/Laurence_B._Keiser",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_the_Ch'ongch'on_River",
+      "created_at": "2025-07-20 12:52:55",
+      "updated_at": "2025-07-20 12:52:55"
+    },
+    {
+      "id": 180,
+      "title": "Leonard Wood",
+      "url": "https://en.wikipedia.org/wiki/Leonard_Wood",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippine–American_War",
+      "created_at": "2025-07-20 12:52:03",
+      "updated_at": "2025-07-20 12:52:03"
+    },
+    {
+      "id": 222,
+      "title": "Leslie Morshead",
+      "url": "https://en.wikipedia.org/wiki/Leslie_Morshead",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Sio",
+      "created_at": "2025-07-20 12:52:23",
+      "updated_at": "2025-07-20 12:52:23"
+    },
+    {
+      "id": 154,
+      "title": "Lewis H. Brereton",
+      "url": "https://en.wikipedia.org/wiki/Lewis_H._Brereton",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Market_Garden",
+      "created_at": "2025-07-20 12:51:56",
+      "updated_at": "2025-07-20 12:51:56"
+    },
+    {
+      "id": 115,
+      "title": "Lloyd Fredendall",
+      "url": "https://en.wikipedia.org/wiki/Lloyd_Fredendall",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Torch",
+      "created_at": "2025-07-20 12:51:39",
+      "updated_at": "2025-07-20 12:51:39"
+    },
+    {
+      "id": 118,
+      "title": "Lucian Truscott",
+      "url": "https://en.wikipedia.org/wiki/Lucian_Truscott",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Port_Lyautey",
+      "created_at": "2025-07-20 12:51:40",
+      "updated_at": "2025-07-20 12:51:40"
+    },
+    {
+      "id": 100,
+      "title": "Main Allied leaders",
+      "url": "https://en.wikipedia.org/wiki/Main_Allied_leaders",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/World_War_I",
+      "created_at": "2025-07-20 12:51:35",
+      "updated_at": "2025-07-20 12:51:35"
+    },
+    {
+      "id": 204,
+      "title": "Manuel Pires",
+      "url": "https://en.wikipedia.org/wiki/Manuel_Pires",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Timor",
+      "created_at": "2025-07-20 12:52:17",
+      "updated_at": "2025-07-20 12:52:17"
+    },
+    {
+      "id": 237,
+      "title": "Marc Mitscher",
+      "url": "https://en.wikipedia.org/wiki/Marc_Mitscher",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Cartwheel",
+      "created_at": "2025-07-20 12:52:25",
+      "updated_at": "2025-07-20 12:52:25"
+    },
+    {
+      "id": 129,
+      "title": "Mark W. Clark",
+      "url": "https://en.wikipedia.org/wiki/Mark_W._Clark",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Allied_invasion_of_Italy",
+      "created_at": "2025-07-20 12:51:46",
+      "updated_at": "2025-07-20 12:51:46"
+    },
+    {
+      "id": 191,
+      "title": "Masaharu Homma",
+      "url": "https://en.wikipedia.org/wiki/Masaharu_Homma",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippines_campaign_(1941–1942)",
+      "created_at": "2025-07-20 12:52:14",
+      "updated_at": "2025-07-20 12:52:14"
+    },
+    {
+      "id": 198,
+      "title": "Mateo Capinpin",
+      "url": "https://en.wikipedia.org/wiki/Mateo_Capinpin",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Bataan",
+      "created_at": "2025-07-20 12:52:16",
+      "updated_at": "2025-07-20 12:52:16"
+    },
+    {
+      "id": 305,
+      "title": "Matthew B. Ridgway",
+      "url": "https://en.wikipedia.org/wiki/Matthew_B._Ridgway",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Third_Battle_of_Seoul",
+      "created_at": "2025-07-20 12:53:00",
+      "updated_at": "2025-07-20 12:53:00"
+    },
+    {
+      "id": 158,
+      "title": "Maxwell D. Taylor",
+      "url": "https://en.wikipedia.org/wiki/Maxwell_D._Taylor",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Market_Garden",
+      "created_at": "2025-07-20 12:51:56",
+      "updated_at": "2025-07-20 12:51:56"
+    },
+    {
+      "id": 126,
+      "title": "Miles Dempsey",
+      "url": "https://en.wikipedia.org/wiki/Miles_Dempsey",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Husky",
+      "created_at": "2025-07-20 12:51:45",
+      "updated_at": "2025-07-20 12:51:45"
+    },
+    {
+      "id": 273,
+      "title": "Millard F. Harmon",
+      "url": "https://en.wikipedia.org/wiki/Millard_F._Harmon",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/New_Georgia_campaign",
+      "created_at": "2025-07-20 12:52:33",
+      "updated_at": "2025-07-20 12:52:33"
+    },
+    {
+      "id": 109,
+      "title": "Neil Ritchie",
+      "url": "https://en.wikipedia.org/wiki/Neil_Ritchie",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/North_African_campaign",
+      "created_at": "2025-07-20 12:51:38",
+      "updated_at": "2025-07-20 12:51:38"
+    },
+    {
+      "id": 194,
+      "title": "Nishizō Tsukahara",
+      "url": "https://en.wikipedia.org/wiki/Nishizō_Tsukahara",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippines_campaign_(1941–1942)",
+      "created_at": "2025-07-20 12:52:14",
+      "updated_at": "2025-07-20 12:52:14"
+    },
+    {
+      "id": 127,
+      "title": "Oliver Leese",
+      "url": "https://en.wikipedia.org/wiki/Oliver_Leese",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Husky",
+      "created_at": "2025-07-20 12:51:45",
+      "updated_at": "2025-07-20 12:51:45"
+    },
+    {
+      "id": 291,
+      "title": "Oliver P. Smith",
+      "url": "https://en.wikipedia.org/wiki/Oliver_P._Smith",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Inchon",
+      "created_at": "2025-07-20 12:52:46",
+      "updated_at": "2025-07-20 12:52:46"
+    },
+    {
+      "id": 123,
+      "title": "Omar Bradley",
+      "url": "https://en.wikipedia.org/wiki/Omar_Bradley",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Husky",
+      "created_at": "2025-07-20 12:51:45",
+      "updated_at": "2025-07-20 12:51:45"
+    },
+    {
+      "id": 231,
+      "title": "Oscar Griswold",
+      "url": "https://en.wikipedia.org/wiki/Oscar_Griswold",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Cartwheel",
+      "created_at": "2025-07-20 12:52:25",
+      "updated_at": "2025-07-20 12:52:25"
+    },
+    {
+      "id": 258,
+      "title": "Oscar W. Griswold",
+      "url": "https://en.wikipedia.org/wiki/Oscar_W._Griswold",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Bougainville_campaign",
+      "created_at": "2025-07-20 12:52:30",
+      "updated_at": "2025-07-20 12:52:30"
+    },
+    {
+      "id": 205,
+      "title": "POW",
+      "url": "https://en.wikipedia.org/wiki/POW",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Timor",
+      "created_at": "2025-07-20 12:52:17",
+      "updated_at": "2025-07-20 12:52:17"
+    },
+    {
+      "id": 319,
+      "title": "Paul L. Freeman Jr.",
+      "url": "https://en.wikipedia.org/wiki/Paul_L._Freeman_Jr.",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Chipyong-ni",
+      "created_at": "2025-07-20 12:53:14",
+      "updated_at": "2025-07-20 12:53:14"
+    },
+    {
+      "id": 187,
+      "title": "Paul Maistre",
+      "url": "https://en.wikipedia.org/wiki/Paul_Maistre",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Meuse–Argonne_offensive",
+      "created_at": "2025-07-20 12:52:13",
+      "updated_at": "2025-07-20 12:52:13"
+    },
+    {
+      "id": 137,
+      "title": "Philip Vian",
+      "url": "https://en.wikipedia.org/wiki/Philip_Vian",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Normandy_landings",
+      "created_at": "2025-07-20 12:51:50",
+      "updated_at": "2025-07-20 12:51:50"
+    },
+    {
+      "id": 142,
+      "title": "Philippe Leclerc",
+      "url": "https://en.wikipedia.org/wiki/Philippe_Leclerc",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_the_Falaise_Pocket",
+      "created_at": "2025-07-20 12:51:51",
+      "updated_at": "2025-07-20 12:51:51"
+    },
+    {
+      "id": 322,
+      "title": "Ralph Monclar",
+      "url": "https://en.wikipedia.org/wiki/Ralph_Monclar",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/First_and_Second_Battles_of_Wonju",
+      "created_at": "2025-07-20 12:53:15",
+      "updated_at": "2025-07-20 12:53:15"
+    },
+    {
+      "id": 320,
+      "title": "Raoul Magrin-Vernerey",
+      "url": "https://en.wikipedia.org/wiki/Raoul_Magrin-Vernerey",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Chipyong-ni",
+      "created_at": "2025-07-20 12:53:14",
+      "updated_at": "2025-07-20 12:53:14"
+    },
+    {
+      "id": 265,
+      "title": "Rapp Brush",
+      "url": "https://en.wikipedia.org/wiki/Rapp_Brush",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/New_Britain_campaign",
+      "created_at": "2025-07-20 12:52:31",
+      "updated_at": "2025-07-20 12:52:31"
+    },
+    {
+      "id": 145,
+      "title": "Raymond O. Barton",
+      "url": "https://en.wikipedia.org/wiki/Raymond_O._Barton",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Liberation_of_Paris",
+      "created_at": "2025-07-20 12:51:52",
+      "updated_at": "2025-07-20 12:51:52"
+    },
+    {
+      "id": 248,
+      "title": "Richmond K. Turner",
+      "url": "https://en.wikipedia.org/wiki/Richmond_K._Turner",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Solomon_Islands_campaign",
+      "created_at": "2025-07-20 12:52:29",
+      "updated_at": "2025-07-20 12:52:29"
+    },
+    {
+      "id": 262,
+      "title": "Robert Amos Row",
+      "url": "https://en.wikipedia.org/wiki/Robert_Amos_Row",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Bougainville_campaign",
+      "created_at": "2025-07-20 12:52:30",
+      "updated_at": "2025-07-20 12:52:30"
+    },
+    {
+      "id": 275,
+      "title": "Robert B. McClure",
+      "url": "https://en.wikipedia.org/wiki/Robert_B._McClure",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/New_Georgia_campaign",
+      "created_at": "2025-07-20 12:52:33",
+      "updated_at": "2025-07-20 12:52:33"
+    },
+    {
+      "id": 190,
+      "title": "Robert Bullard",
+      "url": "https://en.wikipedia.org/wiki/Robert_Bullard",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Meuse–Argonne_offensive",
+      "created_at": "2025-07-20 12:52:13",
+      "updated_at": "2025-07-20 12:52:13"
+    },
+    {
+      "id": 213,
+      "title": "Robert Eichelberger",
+      "url": "https://en.wikipedia.org/wiki/Robert_Eichelberger",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/New_Guinea_campaign",
+      "created_at": "2025-07-20 12:52:20",
+      "updated_at": "2025-07-20 12:52:20"
+    },
+    {
+      "id": 245,
+      "title": "Robert Ghormley",
+      "url": "https://en.wikipedia.org/wiki/Robert_Ghormley",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Solomon_Islands_campaign",
+      "created_at": "2025-07-20 12:52:29",
+      "updated_at": "2025-07-20 12:52:29"
+    },
+    {
+      "id": 257,
+      "title": "Robert S. Beightler",
+      "url": "https://en.wikipedia.org/wiki/Robert_S._Beightler",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Bougainville_campaign",
+      "created_at": "2025-07-20 12:52:30",
+      "updated_at": "2025-07-20 12:52:30"
+    },
+    {
+      "id": 249,
+      "title": "Roy Geiger",
+      "url": "https://en.wikipedia.org/wiki/Roy_Geiger",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Solomon_Islands_campaign",
+      "created_at": "2025-07-20 12:52:29",
+      "updated_at": "2025-07-20 12:52:29"
+    },
+    {
+      "id": 233,
+      "title": "Roy S. Geiger",
+      "url": "https://en.wikipedia.org/wiki/Roy_S._Geiger",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Cartwheel",
+      "created_at": "2025-07-20 12:52:25",
+      "updated_at": "2025-07-20 12:52:25"
+    },
+    {
+      "id": 156,
+      "title": "Roy Urquhart",
+      "url": "https://en.wikipedia.org/wiki/Roy_Urquhart",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Market_Garden",
+      "created_at": "2025-07-20 12:51:56",
+      "updated_at": "2025-07-20 12:51:56"
+    },
+    {
+      "id": 281,
+      "title": "Ruperto Kangleón",
+      "url": "https://en.wikipedia.org/wiki/Ruperto_Kangleón",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Leyte",
+      "created_at": "2025-07-20 12:52:36",
+      "updated_at": "2025-07-20 12:52:36"
+    },
+    {
+      "id": 133,
+      "title": "S.H.A.E.F.",
+      "url": "https://en.wikipedia.org/wiki/S.H.A.E.F.",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Normandy_landings",
+      "created_at": "2025-07-20 12:51:50",
+      "updated_at": "2025-07-20 12:51:50"
+    },
+    {
+      "id": 227,
+      "title": "SCSWPA",
+      "url": "https://en.wikipedia.org/wiki/SCSWPA",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Cartwheel",
+      "created_at": "2025-07-20 12:52:25",
+      "updated_at": "2025-07-20 12:52:25"
+    },
+    {
+      "id": 152,
+      "title": "SHAEF",
+      "url": "https://en.wikipedia.org/wiki/SHAEF",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Siegfried_Line_campaign",
+      "created_at": "2025-07-20 12:51:54",
+      "updated_at": "2025-07-20 12:51:54"
+    },
+    {
+      "id": 136,
+      "title": "Second Army",
+      "url": "https://en.wikipedia.org/wiki/Second_Army",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Normandy_landings",
+      "created_at": "2025-07-20 12:51:50",
+      "updated_at": "2025-07-20 12:51:50"
+    },
+    {
+      "id": 219,
+      "title": "Selwyn Porter",
+      "url": "https://en.wikipedia.org/wiki/Selwyn_Porter",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Huon_Peninsula_campaign",
+      "created_at": "2025-07-20 12:52:21",
+      "updated_at": "2025-07-20 12:52:21"
+    },
+    {
+      "id": 280,
+      "title": "Sergio Osmeña",
+      "url": "https://en.wikipedia.org/wiki/Sergio_Osmeña",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Leyte",
+      "created_at": "2025-07-20 12:52:36",
+      "updated_at": "2025-07-20 12:52:36"
+    },
+    {
+      "id": 238,
+      "title": "Seventh Fleet",
+      "url": "https://en.wikipedia.org/wiki/Seventh_Fleet",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Cartwheel",
+      "created_at": "2025-07-20 12:52:25",
+      "updated_at": "2025-07-20 12:52:25"
+    },
+    {
+      "id": 293,
+      "title": "Shin Hyun-joon",
+      "url": "https://en.wikipedia.org/wiki/Shin_Hyun-joon",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Inchon",
+      "created_at": "2025-07-20 12:52:46",
+      "updated_at": "2025-07-20 12:52:46"
+    },
+    {
+      "id": 286,
+      "title": "Shin Sung-Mo",
+      "url": "https://en.wikipedia.org/wiki/Shin_Sung-Mo",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Pusan_Perimeter",
+      "created_at": "2025-07-20 12:52:43",
+      "updated_at": "2025-07-20 12:52:43"
+    },
+    {
+      "id": 229,
+      "title": "Sixth Army",
+      "url": "https://en.wikipedia.org/wiki/Sixth_Army",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Cartwheel",
+      "created_at": "2025-07-20 12:52:25",
+      "updated_at": "2025-07-20 12:52:25"
+    },
+    {
+      "id": 316,
+      "title": "Smedley Butler",
+      "url": "https://en.wikipedia.org/wiki/Smedley_Butler",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Occupation_of_Nicaragua",
+      "created_at": "2025-07-20 12:53:11",
+      "updated_at": "2025-07-20 12:53:11"
+    },
+    {
+      "id": 292,
+      "title": "Sohn Won-yil",
+      "url": "https://en.wikipedia.org/wiki/Sohn_Won-yil",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Inchon",
+      "created_at": "2025-07-20 12:52:46",
+      "updated_at": "2025-07-20 12:52:46"
+    },
+    {
+      "id": 157,
+      "title": "Stanisław Sosabowski",
+      "url": "https://en.wikipedia.org/wiki/Stanisław_Sosabowski",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Market_Garden",
+      "created_at": "2025-07-20 12:51:56",
+      "updated_at": "2025-07-20 12:51:56"
+    },
+    {
+      "id": 241,
+      "title": "Stanley Savige",
+      "url": "https://en.wikipedia.org/wiki/Stanley_Savige",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Salamaua–Lae_campaign",
+      "created_at": "2025-07-20 12:52:26",
+      "updated_at": "2025-07-20 12:52:26"
+    },
+    {
+      "id": 130,
+      "title": "Supreme Allied Commander",
+      "url": "https://en.wikipedia.org/wiki/Supreme_Allied_Commander",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Overlord",
+      "created_at": "2025-07-20 12:51:48",
+      "updated_at": "2025-07-20 12:51:48"
+    },
+    {
+      "id": 223,
+      "title": "Sydney Rowell",
+      "url": "https://en.wikipedia.org/wiki/Sydney_Rowell",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Kokoda_Track_campaign",
+      "created_at": "2025-07-20 12:52:24",
+      "updated_at": "2025-07-20 12:52:24"
+    },
+    {
+      "id": 302,
+      "title": "Tahsin Yazıcı",
+      "url": "https://en.wikipedia.org/wiki/Tahsin_Yazıcı",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_the_Ch'ongch'on_River",
+      "created_at": "2025-07-20 12:52:55",
+      "updated_at": "2025-07-20 12:52:55"
+    },
+    {
+      "id": 181,
+      "title": "Tasker H. Bliss",
+      "url": "https://en.wikipedia.org/wiki/Tasker_H._Bliss",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippine–American_War",
+      "created_at": "2025-07-20 12:52:03",
+      "updated_at": "2025-07-20 12:52:03"
+    },
+    {
+      "id": 169,
+      "title": "Theodore Roosevelt",
+      "url": "https://en.wikipedia.org/wiki/Theodore_Roosevelt",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippine–American_War",
+      "created_at": "2025-07-20 12:52:03",
+      "updated_at": "2025-07-20 12:52:03"
+    },
+    {
+      "id": 254,
+      "title": "Theodore S. Wilkinson",
+      "url": "https://en.wikipedia.org/wiki/Theodore_S._Wilkinson",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Bougainville_campaign",
+      "created_at": "2025-07-20 12:52:30",
+      "updated_at": "2025-07-20 12:52:30"
+    },
+    {
+      "id": 250,
+      "title": "Theodore Stark Wilkinson",
+      "url": "https://en.wikipedia.org/wiki/Theodore_Stark_Wilkinson",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Solomon_Islands_campaign",
+      "created_at": "2025-07-20 12:52:29",
+      "updated_at": "2025-07-20 12:52:29"
+    },
+    {
+      "id": 163,
+      "title": "Third Army",
+      "url": "https://en.wikipedia.org/wiki/Third_Army",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_the_Bulge",
+      "created_at": "2025-07-20 12:51:58",
+      "updated_at": "2025-07-20 12:51:58"
+    },
+    {
+      "id": 235,
+      "title": "Third Fleet",
+      "url": "https://en.wikipedia.org/wiki/Third_Fleet",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Cartwheel",
+      "created_at": "2025-07-20 12:52:25",
+      "updated_at": "2025-07-20 12:52:25"
+    },
+    {
+      "id": 211,
+      "title": "Thomas Blamey",
+      "url": "https://en.wikipedia.org/wiki/Thomas_Blamey",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/New_Guinea_campaign",
+      "created_at": "2025-07-20 12:52:20",
+      "updated_at": "2025-07-20 12:52:20"
+    },
+    {
+      "id": 307,
+      "title": "Thomas Brodie",
+      "url": "https://en.wikipedia.org/wiki/Thomas_Brodie",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Third_Battle_of_Seoul",
+      "created_at": "2025-07-20 12:53:00",
+      "updated_at": "2025-07-20 12:53:00"
+    },
+    {
+      "id": 208,
+      "title": "Thomas C. Kinkaid",
+      "url": "https://en.wikipedia.org/wiki/Thomas_C._Kinkaid",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_the_Coral_Sea",
+      "created_at": "2025-07-20 12:52:19",
+      "updated_at": "2025-07-20 12:52:19"
+    },
+    {
+      "id": 271,
+      "title": "Thomas J. Ryan",
+      "url": "https://en.wikipedia.org/wiki/Thomas_J._Ryan",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/New_Georgia_campaign",
+      "created_at": "2025-07-20 12:52:33",
+      "updated_at": "2025-07-20 12:52:33"
+    },
+    {
+      "id": 284,
+      "title": "Thomas Kinkaid",
+      "url": "https://en.wikipedia.org/wiki/Thomas_Kinkaid",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Borneo_campaign",
+      "created_at": "2025-07-20 12:52:40",
+      "updated_at": "2025-07-20 12:52:40"
+    },
+    {
+      "id": 131,
+      "title": "Trafford Leigh-Mallory",
+      "url": "https://en.wikipedia.org/wiki/Trafford_Leigh-Mallory",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Overlord",
+      "created_at": "2025-07-20 12:51:48",
+      "updated_at": "2025-07-20 12:51:48"
+    },
+    {
+      "id": 197,
+      "title": "Vicente Lim",
+      "url": "https://en.wikipedia.org/wiki/Vicente_Lim",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Bataan",
+      "created_at": "2025-07-20 12:52:16",
+      "updated_at": "2025-07-20 12:52:16"
+    },
+    {
+      "id": 216,
+      "title": "Victor Windeyer",
+      "url": "https://en.wikipedia.org/wiki/Victor_Windeyer",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Huon_Peninsula_campaign",
+      "created_at": "2025-07-20 12:52:21",
+      "updated_at": "2025-07-20 12:52:21"
+    },
+    {
+      "id": 270,
+      "title": "Walden L. Ainsworth",
+      "url": "https://en.wikipedia.org/wiki/Walden_L._Ainsworth",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/New_Georgia_campaign",
+      "created_at": "2025-07-20 12:52:33",
+      "updated_at": "2025-07-20 12:52:33"
+    },
+    {
+      "id": 230,
+      "title": "Walter Krueger",
+      "url": "https://en.wikipedia.org/wiki/Walter_Krueger",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Cartwheel",
+      "created_at": "2025-07-20 12:52:25",
+      "updated_at": "2025-07-20 12:52:25"
+    },
+    {
+      "id": 299,
+      "title": "Walton H. Walker",
+      "url": "https://en.wikipedia.org/wiki/Walton_H._Walker",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Second_Phase_Offensive",
+      "created_at": "2025-07-20 12:52:52",
+      "updated_at": "2025-07-20 12:52:52"
+    },
+    {
+      "id": 240,
+      "title": "William Bostock",
+      "url": "https://en.wikipedia.org/wiki/William_Bostock",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Cartwheel",
+      "created_at": "2025-07-20 12:52:25",
+      "updated_at": "2025-07-20 12:52:25"
+    },
+    {
+      "id": 260,
+      "title": "William Bridgeford",
+      "url": "https://en.wikipedia.org/wiki/William_Bridgeford",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Bougainville_campaign",
+      "created_at": "2025-07-20 12:52:30",
+      "updated_at": "2025-07-20 12:52:30"
+    },
+    {
+      "id": 267,
+      "title": "William C. Chase",
+      "url": "https://en.wikipedia.org/wiki/William_C._Chase",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Admiralty_Islands_campaign",
+      "created_at": "2025-07-20 12:52:32",
+      "updated_at": "2025-07-20 12:52:32"
+    },
+    {
+      "id": 236,
+      "title": "William F. Halsey",
+      "url": "https://en.wikipedia.org/wiki/William_F._Halsey",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Cartwheel",
+      "created_at": "2025-07-20 12:52:25",
+      "updated_at": "2025-07-20 12:52:25"
+    },
+    {
+      "id": 264,
+      "title": "William H. Rupertus",
+      "url": "https://en.wikipedia.org/wiki/William_H._Rupertus",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/New_Britain_campaign",
+      "created_at": "2025-07-20 12:52:31",
+      "updated_at": "2025-07-20 12:52:31"
+    },
+    {
+      "id": 246,
+      "title": "William Halsey Jr.",
+      "url": "https://en.wikipedia.org/wiki/William_Halsey_Jr.",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Solomon_Islands_campaign",
+      "created_at": "2025-07-20 12:52:29",
+      "updated_at": "2025-07-20 12:52:29"
+    },
+    {
+      "id": 162,
+      "title": "William Hood Simpson",
+      "url": "https://en.wikipedia.org/wiki/William_Hood_Simpson",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Queen",
+      "created_at": "2025-07-20 12:51:57",
+      "updated_at": "2025-07-20 12:51:57"
+    },
+    {
+      "id": 171,
+      "title": "William Howard Taft",
+      "url": "https://en.wikipedia.org/wiki/William_Howard_Taft",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippine–American_War",
+      "created_at": "2025-07-20 12:52:03",
+      "updated_at": "2025-07-20 12:52:03"
+    },
+    {
+      "id": 199,
+      "title": "William Leggatt",
+      "url": "https://en.wikipedia.org/wiki/William_Leggatt",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Timor",
+      "created_at": "2025-07-20 12:52:17",
+      "updated_at": "2025-07-20 12:52:17"
+    },
+    {
+      "id": 312,
+      "title": "William M. Hoge",
+      "url": "https://en.wikipedia.org/wiki/William_M._Hoge",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Rugged",
+      "created_at": "2025-07-20 12:53:09",
+      "updated_at": "2025-07-20 12:53:09"
+    },
+    {
+      "id": 317,
+      "title": "William M. Miley",
+      "url": "https://en.wikipedia.org/wiki/William_M._Miley",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Operation_Varsity",
+      "created_at": "2025-07-20 12:53:13",
+      "updated_at": "2025-07-20 12:53:13"
+    },
+    {
+      "id": 167,
+      "title": "William McKinley",
+      "url": "https://en.wikipedia.org/wiki/William_McKinley",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippine–American_War",
+      "created_at": "2025-07-20 12:52:03",
+      "updated_at": "2025-07-20 12:52:03"
+    },
+    {
+      "id": 314,
+      "title": "William P. Biddle",
+      "url": "https://en.wikipedia.org/wiki/William_P._Biddle",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Occupation_of_Nicaragua",
+      "created_at": "2025-07-20 12:53:11",
+      "updated_at": "2025-07-20 12:53:11"
+    },
+    {
+      "id": 251,
+      "title": "William Rupertus",
+      "url": "https://en.wikipedia.org/wiki/William_Rupertus",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Solomon_Islands_campaign",
+      "created_at": "2025-07-20 12:52:29",
+      "updated_at": "2025-07-20 12:52:29"
+    },
+    {
+      "id": 313,
+      "title": "William Southerland",
+      "url": "https://en.wikipedia.org/wiki/William_Southerland",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Occupation_of_Nicaragua",
+      "created_at": "2025-07-20 12:53:11",
+      "updated_at": "2025-07-20 12:53:11"
+    },
+    {
+      "id": 253,
+      "title": "William Sydney Marchant",
+      "url": "https://en.wikipedia.org/wiki/William_Sydney_Marchant",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Solomon_Islands_campaign",
+      "created_at": "2025-07-20 12:52:29",
+      "updated_at": "2025-07-20 12:52:29"
+    },
+    {
+      "id": 200,
+      "title": "William Veale",
+      "url": "https://en.wikipedia.org/wiki/William_Veale",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_Timor",
+      "created_at": "2025-07-20 12:52:17",
+      "updated_at": "2025-07-20 12:52:17"
+    },
+    {
+      "id": 103,
+      "title": "Winston Churchill",
+      "url": "https://en.wikipedia.org/wiki/Winston_Churchill",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/World_War_II",
+      "created_at": "2025-07-20 12:51:36",
+      "updated_at": "2025-07-20 12:51:36"
+    },
+    {
+      "id": 98,
+      "title": "Woodrow Wilson",
+      "url": "https://en.wikipedia.org/wiki/Woodrow_Wilson",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Pancho_Villa_Expedition",
+      "created_at": "2025-07-20 12:51:33",
+      "updated_at": "2025-07-20 12:51:33"
+    },
+    {
+      "id": 168,
+      "title": "X",
+      "url": "https://en.wikipedia.org/wiki/X",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippine–American_War",
+      "created_at": "2025-07-20 12:52:03",
+      "updated_at": "2025-07-20 12:52:03"
+    },
+    {
+      "id": 301,
+      "title": "Yu Jae-hung",
+      "url": "https://en.wikipedia.org/wiki/Yu_Jae-hung",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Battle_of_the_Ch'ongch'on_River",
+      "created_at": "2025-07-20 12:52:55",
+      "updated_at": "2025-07-20 12:52:55"
+    },
+    {
+      "id": 176,
+      "title": "†",
+      "url": "https://en.wikipedia.org/wiki/†",
+      "node_type": "Person",
+      "degree": 3,
+      "parent_url": "https://en.wikipedia.org/wiki/Philippine–American_War",
+      "created_at": "2025-07-20 12:52:03",
+      "updated_at": "2025-07-20 12:52:03"
+    }
+  ],
+  "exported_at": "2025-07-20T18:28:15.282512"
+}
