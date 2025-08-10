@@ -166,6 +166,62 @@ def get_session_nodes(session_id):
         print(f"Error in get_session_nodes: {e}")
         return jsonify({'error': str(e)}), 500
 
+@app.route('/api/sessions/<int:session_id>/nodes/<node_id>/expand', methods=['POST'])
+def expand_node(session_id, node_id):
+    """Expand a node (for prototype, return the same network data)"""
+    try:
+        if session_id != 1:
+            return jsonify({'error': 'Session not found'}), 404
+        
+        csv_data = read_csv_data()
+        
+        if not csv_data:
+            return jsonify({'error': 'No CSV data found'}), 500
+        
+        # Find the specific node
+        target_node = None
+        for node in csv_data:
+            if node.get('node_id') == node_id:
+                target_node = node
+                break
+        
+        if not target_node:
+            return jsonify({'error': 'Node not found'}), 404
+        
+        # For prototype, return the same network data
+        # In a real implementation, this would fetch related nodes
+        network_nodes = []
+        for node in csv_data:
+            network_node = {
+                'id': node.get('node_id', ''),
+                'title': node.get('name', ''),
+                'node_type': node.get('node_type', ''),
+                'degree': int(node.get('degree', 0)),
+                'description': node.get('description', ''),
+                'start_date': node.get('start_date', ''),
+                'end_date': node.get('end_date', ''),
+                'metadata': node.get('metadata', {})
+            }
+            network_nodes.append(network_node)
+        
+        # Create simple links (placeholder - could be enhanced later)
+        links = []
+        
+        return jsonify({
+            'nodes': network_nodes,
+            'links': links,
+            'expanded_node': {
+                'id': target_node.get('node_id', ''),
+                'title': target_node.get('name', ''),
+                'node_type': target_node.get('node_type', ''),
+                'description': target_node.get('description', '')
+            }
+        })
+        
+    except Exception as e:
+        print(f"Error in expand_node: {e}")
+        return jsonify({'error': str(e)}), 500
+
 @app.route('/api/sessions/<int:session_id>/network', methods=['GET'])
 def get_network_data(session_id):
     """Get network data for visualization"""
