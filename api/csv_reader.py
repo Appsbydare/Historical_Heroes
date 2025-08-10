@@ -168,7 +168,7 @@ def get_session_nodes(session_id):
 
 @app.route('/api/sessions/<int:session_id>/nodes/<node_id>/expand', methods=['POST'])
 def expand_node(session_id, node_id):
-    """Expand a node (for prototype, return related nodes based on Korean War data)"""
+    """Expand a node - show related events for people, related people for events"""
     try:
         if session_id != 1:
             return jsonify({'error': 'Session not found'}), 404
@@ -188,69 +188,111 @@ def expand_node(session_id, node_id):
         if not target_node:
             return jsonify({'error': 'Node not found'}), 404
         
-        # For Korean War data, create some logical connections
-        # This is a prototype - in real implementation, you'd have actual relationship data
+        # Get current network data (all nodes that are already visible)
+        current_nodes = []
+        current_links = []
         
-        # Get all nodes
-        all_nodes = []
-        for node in csv_data:
-            network_node = {
-                'id': node.get('node_id', ''),
-                'title': node.get('name', ''),
-                'node_type': node.get('node_type', ''),
-                'degree': int(node.get('degree', 0)),
-                'description': node.get('description', ''),
-                'start_date': node.get('start_date', ''),
-                'end_date': node.get('end_date', ''),
-                'metadata': node.get('metadata', {})
-            }
-            all_nodes.append(network_node)
+        # Get all nodes that should be visible
+        visible_node_ids = set()
         
-        # Create links based on Korean War relationships
-        links = []
+        # Always include Korean War and key people
+        visible_node_ids.update(['e1', 'p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'p10'])
         
-        # If expanding Korean War (e1), connect to key people
-        if node_id == 'e1':  # Korean War
-            key_people = ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'p10']  # Key Korean War figures
-            for person_id in key_people:
-                links.append({
-                    'source': 'e1',
-                    'target': person_id,
-                    'type': 'involvement'
-                })
+        # Add the clicked node
+        visible_node_ids.add(node_id)
         
-        # If expanding a person, connect to Korean War and other related events
-        elif target_node.get('node_type') == 'Person':
-            # Connect person to Korean War
-            links.append({
-                'source': node_id,
-                'target': 'e1',  # Korean War
-                'type': 'involvement'
-            })
-            
-            # Connect to related events based on person's role
-            if node_id in ['p3', 'p4', 'p5']:  # Truman, Eisenhower, MacArthur
-                links.append({
-                    'source': node_id,
-                    'target': 'e4',  # World War II
-                    'type': 'involvement'
-                })
+        # If expanding a person, add their related events
+        if target_node.get('node_type') == 'Person':
+            if node_id == 'p3':  # Truman
+                visible_node_ids.update(['e1', 'e4', 'e5'])  # Korean War, WWI, WWII
+            elif node_id == 'p4':  # Eisenhower
+                visible_node_ids.update(['e1', 'e4', 'e5', 'e15', 'e16'])  # Korean War, WWI, WWII, Overlord, Normandy
+            elif node_id == 'p5':  # MacArthur
+                visible_node_ids.update(['e1', 'e4', 'e5', 'e35', 'e36', 'e51', 'e52'])  # Korean War, WWI, WWII, Philippines campaigns
+            elif node_id == 'p6':  # Ridgway
+                visible_node_ids.update(['e1', 'e4', 'e5', 'e15', 'e16'])  # Korean War, WWI, WWII, Overlord, Normandy
+            elif node_id == 'p7':  # Walker
+                visible_node_ids.update(['e1', 'e4', 'e5', 'e15', 'e16'])  # Korean War, WWI, WWII, Overlord, Normandy
+            elif node_id == 'p8':  # Van Fleet
+                visible_node_ids.update(['e1', 'e4', 'e5', 'e15', 'e16'])  # Korean War, WWI, WWII, Overlord, Normandy
+            elif node_id == 'p9':  # Stratemeyer
+                visible_node_ids.update(['e1', 'e4', 'e5'])  # Korean War, WWI, WWII
+            elif node_id == 'p10':  # Joy
+                visible_node_ids.update(['e1', 'e4', 'e5'])  # Korean War, WWI, WWII
+            elif node_id == 'p1':  # Syngman Rhee
+                visible_node_ids.update(['e1'])  # Korean War
+            elif node_id == 'p2':  # Paik Sun-yup
+                visible_node_ids.update(['e1'])  # Korean War
         
-        # If expanding an event, connect to related people
+        # If expanding an event, add related people
         elif target_node.get('node_type') == 'Event':
-            # Connect event to some key people
-            if node_id in ['e4', 'e5']:  # World War II events
-                key_people = ['p3', 'p4', 'p5', 'p6', 'p7', 'p8']  # WWII figures
-                for person_id in key_people:
-                    links.append({
-                        'source': node_id,
-                        'target': person_id,
-                        'type': 'involvement'
-                    })
+            if node_id == 'e1':  # Korean War
+                visible_node_ids.update(['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'p10'])
+            elif node_id in ['e4', 'e5']:  # WWI, WWII
+                visible_node_ids.update(['p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'p10'])
+            elif node_id in ['e15', 'e16']:  # Overlord, Normandy
+                visible_node_ids.update(['p4', 'p5', 'p6', 'p7', 'p8'])
+            elif node_id in ['e35', 'e36', 'e51', 'e52']:  # Philippines campaigns
+                visible_node_ids.update(['p5'])
+        
+        # Build nodes and links for visible nodes
+        for node in csv_data:
+            if node.get('node_id') in visible_node_ids:
+                network_node = {
+                    'id': node.get('node_id', ''),
+                    'title': node.get('name', ''),
+                    'node_type': node.get('node_type', ''),
+                    'degree': int(node.get('degree', 0)),
+                    'description': node.get('description', ''),
+                    'start_date': node.get('start_date', ''),
+                    'end_date': node.get('end_date', ''),
+                    'metadata': node.get('metadata', {})
+                }
+                current_nodes.append(network_node)
+        
+        # Create links between visible nodes
+        for source_id in visible_node_ids:
+            for target_id in visible_node_ids:
+                if source_id != target_id:
+                    # Create logical connections based on Korean War relationships
+                    if source_id == 'e1' and target_id.startswith('p'):  # Korean War to people
+                        current_links.append({
+                            'source': source_id,
+                            'target': target_id,
+                            'type': 'involvement'
+                        })
+                    elif source_id.startswith('p') and target_id == 'e1':  # People to Korean War
+                        current_links.append({
+                            'source': source_id,
+                            'target': target_id,
+                            'type': 'involvement'
+                        })
+                    elif source_id.startswith('p') and target_id.startswith('e'):  # People to events
+                        # Add specific relationships
+                        if (source_id in ['p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'p10'] and 
+                            target_id in ['e4', 'e5']):  # Key people to WWI/WWII
+                            current_links.append({
+                                'source': source_id,
+                                'target': target_id,
+                                'type': 'involvement'
+                            })
+                        elif (source_id in ['p4', 'p5', 'p6', 'p7', 'p8'] and 
+                              target_id in ['e15', 'e16']):  # Military leaders to Overlord/Normandy
+                            current_links.append({
+                                'source': source_id,
+                                'target': target_id,
+                                'type': 'involvement'
+                            })
+                        elif source_id == 'p5' and target_id in ['e35', 'e36', 'e51', 'e52']:  # MacArthur to Philippines
+                            current_links.append({
+                                'source': source_id,
+                                'target': target_id,
+                                'type': 'involvement'
+                            })
         
         return jsonify({
-            'nodes': all_nodes,
-            'links': links,
+            'nodes': current_nodes,
+            'links': current_links,
             'expanded_node': {
                 'id': target_node.get('node_id', ''),
                 'title': target_node.get('name', ''),
@@ -265,7 +307,7 @@ def expand_node(session_id, node_id):
 
 @app.route('/api/sessions/<int:session_id>/network', methods=['GET'])
 def get_network_data(session_id):
-    """Get network data for visualization"""
+    """Get network data for visualization - start with Korean War and key people"""
     try:
         if session_id != 1:
             return jsonify({'error': 'Session not found'}), 404
@@ -275,27 +317,56 @@ def get_network_data(session_id):
         if not csv_data:
             return jsonify({'error': 'No CSV data found'}), 500
         
-        # Transform to network format
-        network_nodes = []
-        for node in csv_data:
-            network_node = {
-                'id': node.get('node_id', ''),
-                'title': node.get('name', ''),
-                'node_type': node.get('node_type', ''),
-                'degree': int(node.get('degree', 0)),
-                'description': node.get('description', ''),
-                'start_date': node.get('start_date', ''),
-                'end_date': node.get('end_date', ''),
-                'metadata': node.get('metadata', {})
-            }
-            network_nodes.append(network_node)
+        # Start with only Korean War and key people
+        initial_nodes = []
+        initial_links = []
         
-        # Create simple links (placeholder - could be enhanced later)
-        links = []
+        # Find Korean War (e1)
+        korean_war = None
+        key_people = []
+        
+        for node in csv_data:
+            if node.get('node_id') == 'e1':  # Korean War
+                korean_war = node
+            elif node.get('node_id') in ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'p10']:  # Key people
+                key_people.append(node)
+        
+        # Add Korean War
+        if korean_war:
+            initial_nodes.append({
+                'id': korean_war.get('node_id', ''),
+                'title': korean_war.get('name', ''),
+                'node_type': korean_war.get('node_type', ''),
+                'degree': int(korean_war.get('degree', 0)),
+                'description': korean_war.get('description', ''),
+                'start_date': korean_war.get('start_date', ''),
+                'end_date': korean_war.get('end_date', ''),
+                'metadata': korean_war.get('metadata', {})
+            })
+        
+        # Add key people and their connections to Korean War
+        for person in key_people:
+            initial_nodes.append({
+                'id': person.get('node_id', ''),
+                'title': person.get('name', ''),
+                'node_type': person.get('node_type', ''),
+                'degree': int(person.get('degree', 0)),
+                'description': person.get('description', ''),
+                'start_date': person.get('start_date', ''),
+                'end_date': person.get('end_date', ''),
+                'metadata': person.get('metadata', {})
+            })
+            
+            # Connect to Korean War
+            initial_links.append({
+                'source': person.get('node_id', ''),
+                'target': 'e1',
+                'type': 'involvement'
+            })
         
         return jsonify({
-            'nodes': network_nodes,
-            'links': links
+            'nodes': initial_nodes,
+            'links': initial_links
         })
         
     except Exception as e:

@@ -72,37 +72,48 @@ const NetworkView = () => {
     // Create main group for zoom/pan
     const g = svg.append('g');
 
-    // Create force simulation
+    // Create force simulation with better positioning
     const simulation = d3.forceSimulation(networkData.nodes)
-      .force('link', d3.forceLink(networkData.links).id((d: any) => d.id).distance(100))
-      .force('charge', d3.forceManyBody().strength(-300))
+      .force('link', d3.forceLink(networkData.links).id((d: any) => d.id).distance(80))
+      .force('charge', d3.forceManyBody().strength(-200))
       .force('center', d3.forceCenter(width / 2, height / 2))
-      .force('collision', d3.forceCollide().radius(30));
+      .force('collision', d3.forceCollide().radius(25));
 
-    // Create links
+    // Create links with better styling
     const links = g.append('g')
       .selectAll('line')
       .data(networkData.links)
       .enter()
       .append('line')
       .attr('class', 'link')
-      .attr('stroke-width', 1);
+      .attr('stroke', '#666')
+      .attr('stroke-width', 2)
+      .attr('stroke-opacity', 0.6);
 
-    // Create nodes
+    // Create nodes with proper colors
     const nodes = g.append('g')
       .selectAll('circle')
       .data(networkData.nodes)
       .enter()
       .append('circle')
-      .attr('r', (d) => d.node_type === 'Event' ? 12 : 8)
-      .attr('class', (d) => `node-${d.node_type.toLowerCase()}`)
+      .attr('r', (d) => d.node_type === 'Event' ? 15 : 12)
+      .attr('fill', (d) => d.node_type === 'Event' ? '#000000' : '#90EE90') // Black for Events, Light Green for People
+      .attr('stroke', (d) => d.node_type === 'Event' ? '#333' : '#228B22')
+      .attr('stroke-width', 2)
       .style('cursor', 'pointer')
       .on('click', async (event, d) => {
         event.stopPropagation(); // Prevent zoom when clicking nodes
+        
+        // Get click position relative to the SVG
+        const clickX = event.clientX;
+        const clickY = event.clientY;
+        
+        console.log('Node clicked at position:', clickX, clickY);
         await handleNodeClick(d);
       })
       .on('mouseover', function(event, d: any) {
-        d3.select(this).attr('r', (d: any) => d.node_type === 'Event' ? 16 : 12);
+        // Increase size on hover
+        d3.select(this).attr('r', (d: any) => d.node_type === 'Event' ? 18 : 15);
         
         // Create tooltip with light background and dark text
         const tooltip = d3.select('body').append('div')
@@ -123,24 +134,27 @@ const NetworkView = () => {
         .style('top', (event.pageY - 10) + 'px');
       })
       .on('mouseout', function(event, d: any) {
-        d3.select(this).attr('r', (d: any) => d.node_type === 'Event' ? 12 : 8);
+        // Reset size
+        d3.select(this).attr('r', (d: any) => d.node_type === 'Event' ? 15 : 12);
         d3.selectAll('div').filter(function() {
           return d3.select(this).classed('absolute') && d3.select(this).style('background-color') === 'rgb(255, 255, 255)';
         }).remove();
       });
 
-    // Add labels
+    // Add labels with better styling
     const labels = g.append('g')
       .selectAll('text')
       .data(networkData.nodes)
       .enter()
       .append('text')
-      .text((d) => d.title.length > 15 ? d.title.substring(0, 15) + '...' : d.title)
+      .text((d) => d.title.length > 12 ? d.title.substring(0, 12) + '...' : d.title)
       .attr('x', 0)
       .attr('y', 0)
       .attr('text-anchor', 'middle')
       .attr('dy', '0.35em')
       .style('font-size', '10px')
+      .style('font-weight', 'bold')
+      .style('fill', (d) => d.node_type === 'Event' ? '#ffffff' : '#000000') // White text for black nodes, black text for green nodes
       .style('pointer-events', 'none');
 
     // Update positions on simulation tick
