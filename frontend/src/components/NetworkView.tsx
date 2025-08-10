@@ -153,9 +153,9 @@ const NetworkView = () => {
       .style('font-size', (d) => d.node_type === 'Event' ? '10px' : '10px') // Bigger font for Events
       .style('fill', (d) => d.node_type === 'Event' ? '#ffffff' : '#000000') // White text for black nodes, black text for green nodes
       .style('pointer-events', 'none')
-      .each(function(d: any) {
+              .each(function(d: any) {
         const text = d3.select(this);
-        const words = d.title.split(' ');
+        const words: string[] = d.title.split(' ');
         const maxWidth = d.node_type === 'Event' ? 60 : 60; // Bigger width for Events
         
         if (d.node_type === 'Event') {
@@ -178,12 +178,15 @@ const NetworkView = () => {
           text.text('');
           text.style('font-weight', 'bold'); // Bold for Events
           text.attr('dy', '0.35em'); // Center vertically in circle
+          text.style('text-anchor', 'middle'); // Ensure horizontal centering
           lines.forEach((line: string, i: number) => {
             text.append('tspan')
               .attr('x', 0)
               .attr('dy', i === 0 ? '-0.3em' : '1.2em')
               .style('fill', '#ffffff') // Ensure white color
               .style('font-weight', 'bold')
+              .style('text-anchor', 'middle') // Ensure each line is centered
+              .style('font-size', '10px') // Ensure consistent font size
               .text(line.trim());
           });
         } else {
@@ -191,6 +194,9 @@ const NetworkView = () => {
           text.text(d.title.length > 12 ? d.title.substring(0, 12) + '...' : d.title);
           text.style('font-weight', 'normal'); // Not bold for People
           text.attr('dy', '-1.2em'); // Position above the node
+          text.style('text-anchor', 'middle'); // Ensure horizontal centering
+          text.style('font-size', '10px'); // Ensure consistent font size
+          text.style('fill', '#000000'); // Ensure black color for visibility
         }
       });
 
@@ -344,11 +350,13 @@ const NetworkView = () => {
         
         {/* Session Selector */}
         <div className="flex items-center space-x-4">
-          <label className="text-sm font-medium text-gray-700">Session:</label>
+          <label htmlFor="session-select" className="text-sm font-medium text-gray-700">Session:</label>
           <select
+            id="session-select"
             value={selectedSession || ''}
             onChange={(e) => handleSessionChange(Number(e.target.value))}
             className="border border-gray-300 rounded-md px-3 py-2 text-sm"
+            aria-label="Select a session to view network data"
           >
             {sessions.map((session, index) => (
               <option key={`session-${session.id}-${index}`} value={session.id}>
