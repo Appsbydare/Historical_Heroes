@@ -1,0 +1,46 @@
+# Exclude backend files that aren't needed for the API
+backend/
+build_release/
+ExeFile/
+database/
+*.exe
+*.spec
+*.bat
+
+# Exclude development files
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.local
+.env.production
+
+# Exclude build artifacts
+dist/
+build/
+*.egg-info/
+
+# Exclude IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Exclude OS files
+.DS_Store
+Thumbs.db
+
+# Exclude logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Keep only essential files for the prototype
+# - frontend/ (React app)
+# - api/csv_reader.py (Python API)
+# - api/requirements.txt (Python dependencies)
+# - Nodes.csv (data)
+# - vercel.json (configuration) 

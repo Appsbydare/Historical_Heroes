@@ -9,18 +9,23 @@
       }
     },
     {
-      "src": "api/**/*.py",
+      "src": "api/csv_reader.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/api/$1"
+      "dest": "/api/csv_reader.py"
     },
     {
       "src": "/(.*)",
       "dest": "/frontend/$1"
     }
-  ]
+  ],
+  "functions": {
+    "api/csv_reader.py": {
+      "maxDuration": 30
+    }
+  }
 } 

@@ -5,19 +5,27 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
+# Cache the CSV data to avoid reading it multiple times
+_csv_data = None
+
 def read_csv_data():
-    """Read data from Nodes.csv file"""
+    """Read data from Nodes.csv file with caching"""
+    global _csv_data
+    
+    if _csv_data is not None:
+        return _csv_data
+    
     try:
         # Path to the CSV file
         csv_path = os.path.join(os.path.dirname(__file__), '..', 'Nodes.csv')
         
-        # Read CSV file
-        df = pd.read_csv(csv_path)
+        # Read CSV file with optimized settings
+        df = pd.read_csv(csv_path, low_memory=False)
         
-        # Convert to list of dictionaries
-        data = df.to_dict('records')
+        # Convert to list of dictionaries and cache
+        _csv_data = df.to_dict('records')
         
-        return data
+        return _csv_data
     except Exception as e:
         print(f"Error reading CSV: {e}")
         return []

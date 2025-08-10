@@ -18,13 +18,22 @@
    - Set `skipLibCheck: true` to avoid D3 type definition issues
    - Disabled strict unused variable checking temporarily
 
-4. **Build Process:**
-   - These changes should resolve all Vercel build failures
+4. **Serverless Function Size Error (250MB limit):**
+   - Created `.vercelignore` to exclude unnecessary files
+   - Optimized `vercel.json` to only include essential files
+   - Added CSV data caching to reduce memory usage
+   - Excluded backend/, build_release/, ExeFile/, database/ directories
+
+5. **Build Process:**
+   - These changes should resolve all Vercel build and deployment issues
 
 ## Files Modified:
 - `frontend/tsconfig.json` - Fixed TypeScript configuration
 - `frontend/package.json` - Updated TypeScript version
 - `frontend/src/main.tsx` - Fixed import statements
+- `vercel.json` - Optimized for serverless deployment
+- `.vercelignore` - Exclude unnecessary files
+- `api/csv_reader.py` - Added caching and optimization
 
 ## Next Steps:
 1. Commit these changes
