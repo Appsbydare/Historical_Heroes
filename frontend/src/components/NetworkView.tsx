@@ -141,69 +141,7 @@ const NetworkView = () => {
         }).remove();
       });
 
-    // Add labels with wrapped text for Events
-    const labels = g.append('g')
-      .selectAll('text')
-      .data(networkData.nodes)
-      .enter()
-      .append('text')
-      .attr('x', (d: any) => d.x || 0)
-      .attr('y', (d: any) => d.y || 0)
-      .attr('text-anchor', 'middle')
-      .style('font-size', (d) => d.node_type === 'Event' ? '12px' : '10px') // Bigger font for Events
-      .style('fill', (d) => d.node_type === 'Event' ? '#ffffff' : '#000000') // White text for black nodes, black text for green nodes
-      .style('pointer-events', 'none')
-      .style('font-weight', (d) => d.node_type === 'Event' ? 'bold' : 'normal') // Bold for Events
-      .style('opacity', 0) // Start invisible
-      .each(function(d: any) {
-        const text = d3.select(this);
-        const words: string[] = d.title.split(' ');
-        const maxWidth = d.node_type === 'Event' ? 60 : 60; // Bigger width for Events
-        
-        if (d.node_type === 'Event') {
-          // For Events, wrap text inside the circle
-          let line = '';
-          let lines: string[] = [];
-          
-          words.forEach((word: string) => {
-            const testLine = line + word + ' ';
-            if (testLine.length * 6 > maxWidth) { // Approximate character width
-              lines.push(line);
-              line = word + ' ';
-            } else {
-              line = testLine;
-            }
-          });
-          lines.push(line);
-          
-          // Clear existing text and add wrapped lines
-          text.text('');
-          text.style('font-weight', 'bold'); // Bold for Events
-          text.attr('dy', '0.35em'); // Center vertically in circle
-          text.style('text-anchor', 'middle'); // Ensure horizontal centering
-          text.style('fill', '#ffffff'); // Ensure white color for the main text element
-          lines.forEach((line: string, i: number) => {
-            text.append('tspan')
-              .attr('x', 0)
-              .attr('dy', i === 0 ? '-0.3em' : '1.2em')
-              .style('fill', '#ffffff') // Ensure white color
-              .style('font-weight', 'bold')
-              .style('text-anchor', 'middle') // Ensure each line is centered
-              .style('font-size', '12px') // Larger font size for better visibility
-              .style('text-shadow', '1px 1px 2px rgba(0,0,0,0.8)') // Add text shadow for better contrast
-              .text(line.trim());
-          });
-        } else {
-          // For People, position text above the node
-          text.text(d.title.length > 12 ? d.title.substring(0, 12) + '...' : d.title);
-          text.style('font-weight', 'normal'); // Not bold for People
-          text.attr('dy', '-1.2em'); // Position above the node
-          text.style('text-anchor', 'middle'); // Ensure horizontal centering
-          text.style('font-size', '10px'); // Ensure consistent font size
-          text.style('fill', '#000000'); // Ensure black color for visibility
-          text.style('text-shadow', '1px 1px 2px rgba(255,255,255,0.8)'); // Add white shadow for better contrast
-        }
-      });
+    // Labels will be created after simulation ends to prevent positioning issues
 
     // Update positions on simulation tick
     simulation.on('tick', () => {
@@ -216,11 +154,72 @@ const NetworkView = () => {
       nodes
         .attr('cx', (d: any) => d.x)
         .attr('cy', (d: any) => d.y);
+    });
 
-      labels
+    // Start simulation and create labels after nodes are positioned
+    simulation.on('end', () => {
+      // Remove any existing labels first
+      g.selectAll('text').remove();
+      
+      // Create labels with proper positioning
+      const labels = g.append('g')
+        .selectAll('text')
+        .data(networkData.nodes)
+        .enter()
+        .append('text')
         .attr('x', (d: any) => d.x)
         .attr('y', (d: any) => d.y)
-        .style('opacity', 1); // Make visible once positioned
+        .attr('text-anchor', 'middle')
+        .style('font-size', (d) => d.node_type === 'Event' ? '12px' : '10px')
+        .style('fill', (d) => d.node_type === 'Event' ? '#ffffff' : '#000000')
+        .style('pointer-events', 'none')
+        .style('font-weight', (d) => d.node_type === 'Event' ? 'bold' : 'normal')
+        .each(function(d: any) {
+          const text = d3.select(this);
+          const words: string[] = d.title.split(' ');
+          const maxWidth = d.node_type === 'Event' ? 60 : 60;
+          
+          if (d.node_type === 'Event') {
+            let line = '';
+            let lines: string[] = [];
+            
+            words.forEach((word: string) => {
+              const testLine = line + word + ' ';
+              if (testLine.length * 6 > maxWidth) {
+                lines.push(line);
+                line = word + ' ';
+              } else {
+                line = testLine;
+              }
+            });
+            lines.push(line);
+            
+            text.text('');
+            text.style('font-weight', 'bold');
+            text.attr('dy', '0.35em');
+            text.style('text-anchor', 'middle');
+            text.style('fill', '#ffffff');
+            lines.forEach((line: string, i: number) => {
+              text.append('tspan')
+                .attr('x', 0)
+                .attr('dy', i === 0 ? '-0.3em' : '1.2em')
+                .style('fill', '#ffffff')
+                .style('font-weight', 'bold')
+                .style('text-anchor', 'middle')
+                .style('font-size', '12px')
+                .style('text-shadow', '1px 1px 2px rgba(0,0,0,0.8)')
+                .text(line.trim());
+            });
+          } else {
+            text.text(d.title.length > 12 ? d.title.substring(0, 12) + '...' : d.title);
+            text.style('font-weight', 'normal');
+            text.attr('dy', '-1.2em');
+            text.style('text-anchor', 'middle');
+            text.style('font-size', '10px');
+            text.style('fill', '#000000');
+            text.style('text-shadow', '1px 1px 2px rgba(255,255,255,0.8)');
+          }
+        });
     });
 
     // Cleanup function
