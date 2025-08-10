@@ -74,10 +74,10 @@ const NetworkView = () => {
 
     // Create force simulation with better positioning
     const simulation = d3.forceSimulation(networkData.nodes)
-      .force('link', d3.forceLink(networkData.links).id((d: any) => d.id).distance(100)) // Increased distance
-      .force('charge', d3.forceManyBody().strength(-300)) // Stronger repulsion
+      .force('link', d3.forceLink(networkData.links).id((d: any) => d.id).distance(120)) // Increased distance for bigger nodes
+      .force('charge', d3.forceManyBody().strength(-400)) // Stronger repulsion
       .force('center', d3.forceCenter(width / 2, height / 2))
-      .force('collision', d3.forceCollide().radius((d: any) => d.node_type === 'Event' ? 35 : 20)); // Bigger collision radius for Events
+      .force('collision', d3.forceCollide().radius((d: any) => d.node_type === 'Event' ? 45 : 20)); // Much bigger collision radius for Events
 
     // Create links with better styling
     const links = g.append('g')
@@ -96,7 +96,7 @@ const NetworkView = () => {
       .data(networkData.nodes)
       .enter()
       .append('circle')
-      .attr('r', (d) => d.node_type === 'Event' ? 25 : 12) // Bigger for Events
+      .attr('r', (d) => d.node_type === 'Event' ? 35 : 12) // Much bigger for Events
       .attr('fill', (d) => d.node_type === 'Event' ? '#000000' : '#90EE90') // Black for Events, Light Green for People
       .attr('stroke', (d) => d.node_type === 'Event' ? '#333' : '#228B22')
       .attr('stroke-width', 2)
@@ -113,7 +113,7 @@ const NetworkView = () => {
       })
       .on('mouseover', function(event, d: any) {
         // Increase size on hover
-        d3.select(this).attr('r', (d: any) => d.node_type === 'Event' ? 30 : 15);
+        d3.select(this).attr('r', (d: any) => d.node_type === 'Event' ? 40 : 15);
         
         // Create tooltip with light background and dark text
         const tooltip = d3.select('body').append('div')
@@ -135,7 +135,7 @@ const NetworkView = () => {
       })
       .on('mouseout', function(event, d: any) {
         // Reset size
-        d3.select(this).attr('r', (d: any) => d.node_type === 'Event' ? 25 : 12);
+        d3.select(this).attr('r', (d: any) => d.node_type === 'Event' ? 35 : 12);
         d3.selectAll('div').filter(function() {
           return d3.select(this).classed('absolute') && d3.select(this).style('background-color') === 'rgb(255, 255, 255)';
         }).remove();
@@ -150,14 +150,13 @@ const NetworkView = () => {
       .attr('x', 0)
       .attr('y', 0)
       .attr('text-anchor', 'middle')
-      .style('font-size', (d) => d.node_type === 'Event' ? '8px' : '10px')
+      .style('font-size', (d) => d.node_type === 'Event' ? '10px' : '10px') // Bigger font for Events
       .style('fill', (d) => d.node_type === 'Event' ? '#ffffff' : '#000000') // White text for black nodes, black text for green nodes
       .style('pointer-events', 'none')
       .each(function(d: any) {
         const text = d3.select(this);
         const words = d.title.split(' ');
-        const maxWidth = d.node_type === 'Event' ? 40 : 60; // Smaller width for Events
-        const lineHeight = d.node_type === 'Event' ? 8 : 10;
+        const maxWidth = d.node_type === 'Event' ? 60 : 60; // Bigger width for Events
         
         if (d.node_type === 'Event') {
           // For Events, wrap text inside the circle
@@ -182,7 +181,9 @@ const NetworkView = () => {
           lines.forEach((line: string, i: number) => {
             text.append('tspan')
               .attr('x', 0)
-              .attr('dy', i === 0 ? '-0.5em' : '1em')
+              .attr('dy', i === 0 ? '-0.3em' : '1.2em')
+              .style('fill', '#ffffff') // Ensure white color
+              .style('font-weight', 'bold')
               .text(line.trim());
           });
         } else {
