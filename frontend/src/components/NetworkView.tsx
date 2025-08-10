@@ -147,13 +147,14 @@ const NetworkView = () => {
       .data(networkData.nodes)
       .enter()
       .append('text')
-      .attr('x', 0)
-      .attr('y', 0)
+      .attr('x', (d: any) => d.x || 0)
+      .attr('y', (d: any) => d.y || 0)
       .attr('text-anchor', 'middle')
       .style('font-size', (d) => d.node_type === 'Event' ? '12px' : '10px') // Bigger font for Events
       .style('fill', (d) => d.node_type === 'Event' ? '#ffffff' : '#000000') // White text for black nodes, black text for green nodes
       .style('pointer-events', 'none')
       .style('font-weight', (d) => d.node_type === 'Event' ? 'bold' : 'normal') // Bold for Events
+      .style('opacity', 0) // Start invisible
       .each(function(d: any) {
         const text = d3.select(this);
         const words: string[] = d.title.split(' ');
@@ -218,7 +219,8 @@ const NetworkView = () => {
 
       labels
         .attr('x', (d: any) => d.x)
-        .attr('y', (d: any) => d.y);
+        .attr('y', (d: any) => d.y)
+        .style('opacity', 1); // Make visible once positioned
     });
 
     // Cleanup function
